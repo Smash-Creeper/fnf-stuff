@@ -1,0 +1,2 @@
+ogx = x
+ogy = y

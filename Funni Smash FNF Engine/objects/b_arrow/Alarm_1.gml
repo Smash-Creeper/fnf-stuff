@@ -1,0 +1,1 @@
+oglength = length

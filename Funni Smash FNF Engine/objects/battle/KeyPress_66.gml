@@ -1,0 +1,1 @@
+global.botplay = !global.botplay

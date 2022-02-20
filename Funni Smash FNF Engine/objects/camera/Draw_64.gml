@@ -1,0 +1,12 @@
+draw_set_color(c_white)
+draw_text(0,160,string(x))
+draw_text(0,180,string(y))
+draw_text(0,200,string(battle_cam))
+if(battle_cam){
+	draw_text(0,220,string(battle.player[battle_cam_target_player].scfx))
+	draw_text(0,240,string(battle.player[battle_cam_target_player].scfy))
+}
+draw_text(0,260,string(scale_x))
+draw_text(0,280,string(scale_y))
+draw_text(0,320,string(angle))
+draw_text(0,340,string(target_angle))

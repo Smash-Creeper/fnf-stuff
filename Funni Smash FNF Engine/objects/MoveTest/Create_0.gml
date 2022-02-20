@@ -1,0 +1,2 @@
+squarex = x
+squarey = y

@@ -1,0 +1,10 @@
+Notes and To-do List for tomorrow(1-18-22)
+Add Event System to Charter (Camera shifts, changing arrow types, etc); Gotta add saving and loading to it too; bug where after first section event indicators(the lines in the middle) wont show up,
+Make a proper Charter UI,
+Make Menu System (Story Mode, Freeplay, etc),
+Make Settings Menu,
+Create Stage Positioning System (Dev only tool),
+Create camera offset System for player characters,
+
+Extra:
+Add Hidden Chart Feature to Charter (For Songs who have more than 2 singers)

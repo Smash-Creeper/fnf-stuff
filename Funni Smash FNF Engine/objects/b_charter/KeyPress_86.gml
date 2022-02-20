@@ -1,0 +1,1 @@
+note_length = get_integer("Note Length:",string(note_length))

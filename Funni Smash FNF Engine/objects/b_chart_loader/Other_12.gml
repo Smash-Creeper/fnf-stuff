@@ -1,0 +1,75 @@
+/// @desc Old Initial Loading
+
+var _buffer = buffer_load(global.chart_file);
+var _string = buffer_read(_buffer,buffer_string);
+buffer_delete(_buffer)
+
+var _loaded_data = json_parse(_string)
+
+var chart = array_pop(_loaded_data)
+
+var _data = array_get(chart,0)
+show_debug_message(string(_data))
+song_title = string(_data.song_title)
+song_inst = audio_play_sound(asset_get_index(_data.audio_inst),0,false)
+song_vocals = audio_play_sound(asset_get_index(_data.audio_vocal),0,false)
+t_section = _data.total_sections
+arrow_speed = _data.arrow_speed
+global.player[0] = asset_get_index(_data.player0)
+global.player[1] = asset_get_index(_data.player1)
+global.arrow_speed = _data.arrow_speed
+/*audio_pause_sound(audio_inst)
+audio_pause_sound(audio_vocal)*/
+
+var proc = 1
+repeat(t_section){
+	var _data = array_get(chart,proc)
+
+	var nproc = 0
+	repeat(array_length(_data)){
+		var NC = array_get(_data,nproc)
+		//Dear future smash creeper, make the loading system based off song time and not sections, thanks! -Past Smash
+		show_debug_message(string(NC))
+		var tt = (variable_instance_exists(NC,"notetype") ? NC.notetype : 0)
+		var N = instance_create_depth(NC.notex,getYfromStrum(NC.notepos),BATTLE_DEPTH.B_ARROW_P1,arrowToObj(tt))
+		N.arrow_type = 12 + NC.notedir
+		N.pos = NC.notepos
+		N.length = NC.notelength
+		
+		if(NC.notex < 640){
+			N.linked_ui_arrow = battle.arrow[NC.notedir,1]
+			N.depth = BATTLE_DEPTH.B_ARROW_P2
+		}else if(NC.notex >= 640){
+			N.linked_ui_arrow = battle.arrow[NC.notedir,0]
+			N.depth = BATTLE_DEPTH.B_ARROW_P1
+		}
+		nproc += 1
+	}
+	c_section += 1
+	proc += 1
+}
+c_section = 0
+
+//var proc = 1
+repeat((array_length(chart)-1) - t_section){
+	var _data = array_get(chart,proc)
+
+	var nproc = 0
+	repeat(array_length(_data)){
+		var NC = array_get(_data,nproc)
+		show_debug_message(string(NC))
+		var vv = (variable_instance_exists(NC,"eventval") ? NC.eventval : 0)
+		var N = instance_create_depth(0,getYfromStrum(NC.eventpos),BATTLE_DEPTH.B_ARROW_P1,b_event)
+		N._event_type = NC.eventtype
+		N.pos = NC.eventpos
+		N.value = vv
+		nproc += 1
+	}
+	c_section += 1
+	proc += 1
+}
+c_section = 0
+
+show_debug_message(string(arrow_speed))
+show_debug_message(string(global.arrow_speed))
+_chart_loaded = true

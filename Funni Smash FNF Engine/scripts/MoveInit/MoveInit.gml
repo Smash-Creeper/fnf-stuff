@@ -1,0 +1,3 @@
+function MoveInit(){
+	global.movingobjs = []
+}

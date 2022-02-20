@@ -1,0 +1,1 @@
+//draw_char_sprite_ext(global.spr_boyfriend,char,state,img_current,x,y,(facing = DIR.RIGHT ? (spr_facing = DIR.RIGHT ? 1 : -1) : (spr_facing = DIR.LEFT ? 1 : -1)),1,c_white,1)

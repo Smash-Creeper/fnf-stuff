@@ -1,0 +1,1 @@
+buttons = ["Story Mode", "Freeplay", "Options", "Credits", "Donate", "Discord"]
