@@ -9,6 +9,7 @@ if(!locked){
 	if(!linked_ui_arrow.detect_arrow_hold){
 		locked = false
 	}
+	y = linked_ui_arrow.y
 }
 x = linked_ui_arrow.x
 
