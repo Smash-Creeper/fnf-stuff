@@ -10,6 +10,25 @@ with(b_event){
 			funni_arrows2 = true
 		}
 	}
+	if(tid = 2 && triggered = true){
+		with(too_slow_encore_modchart){
+			global.arrow_speed = 13
+		}
+	}
+	if(tid = 3 && triggered = true){
+		with(too_slow_encore_modchart){
+			var proc = 0
+			var l = 0
+			repeat(8){
+				MoveObject(battle.arrow[proc,l],"image_angle",0,90,60)
+				proc += 1
+				if(proc >= 4){
+					l += 1
+					proc = 0
+				}
+			}
+		}
+	}
 }
 
 if(funni_arrows = true){

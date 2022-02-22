@@ -2,6 +2,7 @@ function FlashSpriteOutit(){
 	sprite_delete(global.spr_boyfriend)
 	sprite_delete(global.spr_daddy_dearest)
 	sprite_delete(global.spr_girlfriend)
+	sprite_delete(global.spr_sensai)
 	sprite_delete(global.spr_event_note)
 	sprite_delete(global.arrow_sprites[0])
 	sprite_delete(global.arrow_sprites[1])

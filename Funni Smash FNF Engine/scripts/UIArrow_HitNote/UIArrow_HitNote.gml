@@ -4,7 +4,8 @@ function UIArrow_HitNote(){
 	if(cpu = false){
 		var A = instance_nearest(x,y,b_arrow)
 		with(A){
-			if(linked_ui_arrow.cpu = false && linked_ui_arrow.detect_arrow && x = linked_ui_arrow.x && (y <= linked_ui_arrow.y + getYfromStrum(global.mercy_length) && y >= linked_ui_arrow.y - getYfromStrum(global.mercy_length))){
+//			if(linked_ui_arrow.cpu = false && linked_ui_arrow.detect_arrow && x = linked_ui_arrow.x && (y <= linked_ui_arrow.y + getYfromStrum(global.mercy_length) && y >= linked_ui_arrow.y - getYfromStrum(global.mercy_length))){
+			if(linked_ui_arrow.cpu = false && linked_ui_arrow.detect_arrow && point_distance(x,y, linked_ui_arrow.x, linked_ui_arrow.y) <= getYfromStrum(global.mercy_length)){
 				with(linked_ui_arrow){
 					if(arrow_state != 8){
 						arrow_state = 8
@@ -16,7 +17,8 @@ function UIArrow_HitNote(){
 	}else{
 		var A = instance_nearest(x,y,b_arrow)
 		with(A){
-			if(x = linked_ui_arrow.x && (y <= linked_ui_arrow.y + getYfromStrum(global.mercy_length)) && linked_ui_arrow.linked_player.cpu = true && self._must_hit = true){
+//			if(x = linked_ui_arrow.x && (y <= linked_ui_arrow.y + getYfromStrum(global.mercy_length)) && linked_ui_arrow.linked_player.cpu = true && self._must_hit = true){
+			if(point_distance(x,y, linked_ui_arrow.x, linked_ui_arrow.y) <= getYfromStrum(global.mercy_length) && linked_ui_arrow.linked_player.cpu = true && self._must_hit = true){
 				with(linked_ui_arrow){
 					if(arrow_state != 8){
 						arrow_state = 8

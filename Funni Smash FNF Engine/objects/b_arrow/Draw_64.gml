@@ -14,3 +14,5 @@ draw_set_color(c_black)
 draw_text(x,y-80,string(getYfromStrum(length)))
 draw_text(x,y-80+20,string(length))
 draw_text(x,y-80+40,string(locked))
+
+draw_rectangle(-10,-10,10,10,false)

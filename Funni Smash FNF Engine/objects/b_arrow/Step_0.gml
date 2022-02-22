@@ -1,6 +1,7 @@
 if(!locked){
 	var p = (pos - b_chart_loader.song_pos)
-	y = (getYfromStrum(p) * global.arrow_speed) + linked_ui_arrow.y
+	y = lengthdir_y(getYfromStrum(p) * global.arrow_speed,linked_ui_arrow.image_angle-90) + linked_ui_arrow.y
+	x = lengthdir_x(getYfromStrum(p) * global.arrow_speed,linked_ui_arrow.image_angle-90) + linked_ui_arrow.x
 }else if(locked){
 	length = oglength + pos - b_chart_loader.song_pos
 	if(length <= 0){
@@ -10,11 +11,11 @@ if(!locked){
 		locked = false
 	}
 	y = linked_ui_arrow.y
+	x = linked_ui_arrow.x
 }
-x = linked_ui_arrow.x
 
 //if(y < 0 - (getYfromStrum(length)* global.arrow_speed)-200){
-if(y <= linked_ui_arrow.y - getYfromStrum(global.mercy_length)*2 && linked_ui_arrow.cpu = false && global.botplay = false){
+if(getYfromStrum((pos - b_chart_loader.song_pos) + oglength) < 0 - getYfromStrum(global.mercy_length)*2 && linked_ui_arrow.cpu = false && global.botplay = false){
 /*	show_debug_message("Arrow Missed!")
 	instance_destroy(self)*/
 	event_user(1)

@@ -1,0 +1,1 @@
+StopMoveObject(camera,"zoom")

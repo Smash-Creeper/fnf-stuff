@@ -5,5 +5,6 @@ function Character_Custom(){
 		BF,
 		DAD,
 		GF,
+		SENSAI,
 	}
 }

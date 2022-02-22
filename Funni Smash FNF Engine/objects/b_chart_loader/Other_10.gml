@@ -1,7 +1,7 @@
 /// @desc Note Loading
 
 var _data = array_get(THE_CHART,0)
-global.arrow_speed = _data.arrow_speed
+//global.arrow_speed = _data.arrow_speed
 var cs = 0
 var proc = 1
 repeat(array_length(THE_CHART)-1){

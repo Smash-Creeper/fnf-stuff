@@ -32,8 +32,9 @@ if(chart_is_loaded = true){
 			draw_text(0,20,string(X))
 			draw_text(0,40,string(POS))
 			draw_text(0,60,string(DIR))
-			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR,0,X,POS - (grid_p1_height * c_section),sx,sy,c_white,1)
-			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR+4,0,X,POS - (grid_p1_height * c_section),(1/shw) * 10,(1/shh) * getYfromStrum(LENGTH),image_blend,image_alpha,SPRITE_ORIGIN.TOP_MIDDLE)
+			var ALP = ((POS > getYfromStrum(song_pos)) ? 1 : 0.5)
+			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR,0,X,POS - (grid_p1_height * c_section),sx,sy,c_white,ALP)
+			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR+4,0,X,POS - (grid_p1_height * c_section),(1/shw) * 10,(1/shh) * getYfromStrum(LENGTH),image_blend,ALP,SPRITE_ORIGIN.TOP_MIDDLE)
 			draw_text_color(X,POS - (grid_p1_height * c_section),array_get(array_get(NC,proc),1),c_white,c_white,c_white,c_white,1)
 			proc += 1
 		}

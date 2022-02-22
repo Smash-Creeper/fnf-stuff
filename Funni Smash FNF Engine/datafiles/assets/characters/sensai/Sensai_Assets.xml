@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sensai_Assets.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Bitmap 1" x="0" y="0" width="366" height="582"/>
+	<SubTexture name="Bitmap 11" x="366" y="0" width="444" height="612"/>
+	<SubTexture name="Bitmap 12" x="810" y="0" width="558" height="594"/>
+	<SubTexture name="Bitmap 13" x="1368" y="0" width="354" height="594"/>
+	<SubTexture name="Bitmap 14" x="1722" y="0" width="456" height="594"/>
+	<SubTexture name="Bitmap 3" x="2178" y="0" width="564" height="594"/>
+	<SubTexture name="Bitmap 4" x="2742" y="0" width="456" height="612"/>
+	<SubTexture name="Bitmap 5" x="3198" y="0" width="456" height="594"/>
+	<SubTexture name="Bitmap 6" x="3654" y="0" width="348" height="582"/>
+	<SubTexture name="Bitmap 7" x="0" y="612" width="354" height="594"/>
+	<SubTexture name="Bitmap 7 copy" x="3654" y="0" width="348" height="582"/>
+	<SubTexture name="Bitmap 8" x="3654" y="0" width="348" height="582"/>
+	<SubTexture name="Bitmap 9" x="3654" y="0" width="348" height="582"/>
+	<SubTexture name="Sensai D0000" x="2742" y="0" width="456" height="612"/>
+	<SubTexture name="Sensai Down0000" x="354" y="612" width="488" height="585" frameX="0" frameY="-28" frameWidth="488" frameHeight="613"/>
+	<SubTexture name="Sensai Down0001" x="842" y="612" width="477" height="595" frameX="-6" frameY="-18" frameWidth="488" frameHeight="613"/>
+	<SubTexture name="Sensai Down0002" x="1319" y="612" width="466" height="604" frameX="-11" frameY="-9" frameWidth="488" frameHeight="613"/>
+	<SubTexture name="Sensai Down0003" x="2742" y="0" width="456" height="612" frameX="-15" frameY="0" frameWidth="456" frameHeight="612"/>
+	<SubTexture name="Sensai Down0004" x="2742" y="0" width="456" height="612" frameX="-15" frameY="0" frameWidth="456" frameHeight="612"/>
+	<SubTexture name="Sensai Down0005" x="2742" y="0" width="456" height="612" frameX="-15" frameY="0" frameWidth="456" frameHeight="612"/>
+	<SubTexture name="Sensai I0000" x="0" y="0" width="366" height="582"/>
+	<SubTexture name="Sensai Idle0000" x="1785" y="612" width="394" height="561" frameX="0" frameY="-21" frameWidth="394" frameHeight="583"/>
+	<SubTexture name="Sensai Idle0001" x="2179" y="612" width="384" height="569" frameX="-5" frameY="-14" frameWidth="394" frameHeight="583"/>
+	<SubTexture name="Sensai Idle0002" x="2563" y="612" width="375" height="575" frameX="-9" frameY="-7" frameWidth="394" frameHeight="583"/>
+	<SubTexture name="Sensai Idle0003" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0004" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0005" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0006" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0007" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0008" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0009" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0010" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0011" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0012" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0013" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai Idle0014" x="0" y="0" width="366" height="582" frameX="-12" frameY="0" frameWidth="366" frameHeight="582"/>
+	<SubTexture name="Sensai L0000" x="0" y="612" width="354" height="594"/>
+	<SubTexture name="Sensai Left0000" x="2938" y="612" width="370" height="595" frameX="0" frameY="0" frameWidth="371" frameHeight="595"/>
+	<SubTexture name="Sensai Left0001" x="3308" y="612" width="365" height="595" frameX="-5" frameY="0" frameWidth="371" frameHeight="595"/>
+	<SubTexture name="Sensai Left0002" x="3673" y="612" width="359" height="595" frameX="-11" frameY="0" frameWidth="371" frameHeight="595"/>
+	<SubTexture name="Sensai Left0003" x="0" y="1216" width="356" height="595" frameX="-15" frameY="0" frameWidth="371" frameHeight="595"/>
+	<SubTexture name="Sensai Left0004" x="0" y="1216" width="356" height="595" frameX="-15" frameY="0" frameWidth="371" frameHeight="595"/>
+	<SubTexture name="Sensai Left0005" x="0" y="1216" width="356" height="595" frameX="-15" frameY="0" frameWidth="371" frameHeight="595"/>
+	<SubTexture name="Sensai R0000" x="3198" y="0" width="456" height="594"/>
+	<SubTexture name="Sensai Right0000" x="356" y="1216" width="486" height="595" frameX="-1" frameY="0" frameWidth="487" frameHeight="595"/>
+	<SubTexture name="Sensai Right0001" x="842" y="1216" width="476" height="594" frameX="-1" frameY="-1" frameWidth="487" frameHeight="595"/>
+	<SubTexture name="Sensai Right0002" x="1318" y="1216" width="466" height="594" frameX="-1" frameY="-1" frameWidth="487" frameHeight="595"/>
+	<SubTexture name="Sensai Right0003" x="1784" y="1216" width="458" height="593" frameX="0" frameY="-2" frameWidth="487" frameHeight="595"/>
+	<SubTexture name="Sensai Right0004" x="1784" y="1216" width="458" height="593" frameX="0" frameY="-2" frameWidth="487" frameHeight="595"/>
+	<SubTexture name="Sensai Right0005" x="1784" y="1216" width="458" height="593" frameX="0" frameY="-2" frameWidth="487" frameHeight="595"/>
+	<SubTexture name="Sensai U0000" x="2178" y="0" width="564" height="594"/>
+	<SubTexture name="Sensai Up0000" x="2242" y="1216" width="512" height="629" frameX="-26" frameY="0" frameWidth="564" frameHeight="629"/>
+	<SubTexture name="Sensai Up0001" x="2754" y="1216" width="530" height="617" frameX="-17" frameY="-12" frameWidth="564" frameHeight="629"/>
+	<SubTexture name="Sensai Up0002" x="3284" y="1216" width="547" height="606" frameX="-9" frameY="-23" frameWidth="564" frameHeight="629"/>
+	<SubTexture name="Sensai Up0003" x="2178" y="0" width="564" height="594" frameX="0" frameY="-34" frameWidth="564" frameHeight="594"/>
+	<SubTexture name="Sensai Up0004" x="2178" y="0" width="564" height="594" frameX="0" frameY="-34" frameWidth="564" frameHeight="594"/>
+	<SubTexture name="Sensai Up0005" x="2178" y="0" width="564" height="594" frameX="0" frameY="-34" frameWidth="564" frameHeight="594"/>
+</TextureAtlas>

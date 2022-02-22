@@ -86,6 +86,13 @@ function FlashSprite_Custom(){
 	CharAnim_Define(FP,CHARACTER.GF,PLAYER_STATE.DOWN,"GF Down Note")
 	CharAnim_Define(FP,CHARACTER.GF,PLAYER_STATE.UP,"GF Up Note")
 	CharAnim_Define(FP,CHARACTER.GF,PLAYER_STATE.RIGHT,"GF Right Note")
+	var FP = "./assets/characters/sensai/Sensai_Assets"
+	global.spr_sensai = sprite_add(FP + ".png",0,false,false,0,0)
+	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.IDLE,"Sensai Idle")
+	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.LEFT,"Sensai Left")
+	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.DOWN,"Sensai Down")
+	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.UP,"Sensai Up")
+	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.RIGHT,"Sensai Right")
 	
 	///Stages
 	var FP = "./assets/stages/stage/"
