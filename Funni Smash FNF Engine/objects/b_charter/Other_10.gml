@@ -15,7 +15,7 @@ var chart = array_pop(_loaded_data)
 var event = array_pop(_loaded_data_event)
 
 var _data = array_get(chart,0)
-show_debug_message(string(_data))
+//show_debug_message(string(_data))
 song_title = string(_data.song_title)
 audio_inst = audio_play_sound(asset_get_index(_data.audio_inst),0,false)
 audio_vocal = audio_play_sound(asset_get_index(_data.audio_vocal),0,false)
@@ -71,7 +71,7 @@ var STAN = (array_length(chart)-1 >= array_length(event) ? (array_length(chart)-
 		repeat(array_length(_data)){
 			var NC = array_get(_data,nproc)
 			if(variable_instance_exists(NC,"eventtype")){
-			charter_add_event(NC.eventpos, NC.eventtype,NC.eventval,cs)
+				charter_add_event(NC.eventpos, NC.eventtype,NC.eventval,cs)
 			}
 			nproc += 1
 		}

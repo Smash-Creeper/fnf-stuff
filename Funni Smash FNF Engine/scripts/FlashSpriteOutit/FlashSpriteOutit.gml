@@ -11,4 +11,7 @@ function FlashSpriteOutit(){
 	sprite_delete(global.stage_sprite[STAGE.STAGE][2])
 	sprite_delete(global.spr_logo)
 	sprite_delete(global.spr_prsstart)
+	sprite_delete(global.spr_countdown[0])
+	sprite_delete(global.spr_countdown[1])
+	sprite_delete(global.spr_countdown[2])
 }

@@ -11,14 +11,21 @@ var chart = array_pop(_loaded_data)*/
 var _data = array_get(THE_CHART,0)
 //show_debug_message(string(_data))
 song_title = string(_data.song_title)
+if(!instance_exists(b_countdown)){
 song_inst = audio_play_sound(asset_get_index(_data.audio_inst),0,false)
 song_vocals = audio_play_sound(asset_get_index(_data.audio_vocal),0,false)
+}
 t_section = _data.total_sections
 arrow_speed = _data.arrow_speed
 global.arrow_speed = _data.arrow_speed
 if(variable_instance_exists(_data,"bpm")){
 	bpm = _data.bpm
 	global.bpm = _data.bpm
+}
+
+if(object_exists(asset_get_index(string(song_title) + "_modchart"))){
+	mod_chart = instance_create_depth(0,0,0,asset_get_index(string(song_title) + "_modchart"))
+	show_debug_message("It Exists!")
 }
 
 /*audio_pause_sound(audio_inst)
@@ -83,3 +90,6 @@ if(global.playtesttime > 0.00){
 	audio_sound_set_track_position(song_vocals,global.playtesttime)
 	song_pos = global.playtesttime;
 }
+
+
+loaded = true

@@ -34,6 +34,12 @@ if(!instance_exists(b_charter_menu) || b_charter_menu._menu_is_extended = false 
 		audio_sound_set_track_position(audio_inst,song_pos)
 		audio_sound_set_track_position(audio_vocal,song_pos)
 	}
+	
+	if(inst_muted){
+		audio_sound_gain(audio_inst,0.00000000000000000000000000000010,0)
+	}else{
+		audio_sound_gain(audio_inst,1,0)
+	}
 
 	camera.y = -40
 

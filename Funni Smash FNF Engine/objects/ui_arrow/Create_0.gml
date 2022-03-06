@@ -22,6 +22,11 @@ if(linked_player != noone && instance_exists(linked_player)){
 
 _self_surface = surface_create(1280,820)
 
+_target_note = noone
+
+dx = camera.x + x
+dy = camera.y + y
+
 
 
 //input = global.input_up

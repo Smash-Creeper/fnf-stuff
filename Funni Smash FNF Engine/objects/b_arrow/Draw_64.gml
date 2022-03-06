@@ -1,7 +1,7 @@
 var scalex = 1/100 * 70.06
 var scaley = 1/100 * 70.06
 
-var shh = real(global.img_height[arrow_type + 4][0])
+var shh = real(global.img_height[arrow_type + 4][0]) * (linked_ui_arrow.image_angle >= 180 ? -1 : 1)
 var shw = real(global.img_width[arrow_type + 4][0])
 var shhv = shh/100 * 70.06
 var proc = 0

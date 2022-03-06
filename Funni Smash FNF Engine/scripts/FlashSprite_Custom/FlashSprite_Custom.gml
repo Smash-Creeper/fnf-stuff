@@ -111,5 +111,10 @@ function FlashSprite_Custom(){
 	FlashImg_Define(FP,OTHER.PRESS_START,"Press Enter to Begin")
 	FlashImg_Define(FP,OTHER.PRESSED_START,"ENTER PRESSED")
 	
+	var FP = "./assets/shared/"
+	global.spr_countdown[0] = sprite_add(FP + "ready.png",0,false,true,756/2,364/2)
+	global.spr_countdown[1] = sprite_add(FP + "set.png",0,false,true,702/2,322/2)
+	global.spr_countdown[2] = sprite_add(FP + "go.png",0,false,true,558/2,430/2)
+	
 	
 }

@@ -1,6 +1,6 @@
 /// @desc Reload Song
 
-var _buffer = buffer_load(file);
+var _buffer = buffer_load(global.chart_file);
 var _string = buffer_read(_buffer,buffer_string);
 buffer_delete(_buffer)
 

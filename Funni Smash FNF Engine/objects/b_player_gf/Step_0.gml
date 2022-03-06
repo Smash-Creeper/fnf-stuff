@@ -1,6 +1,6 @@
 img_timer += 1
 
-if(img_timer >= round((1/FPS)*60)){
+if(img_timer >= round((1/FPS)*getFramesPerBeat()*2)){
 	img_current += 1
 	img_timer = 0
 }

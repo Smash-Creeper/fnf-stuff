@@ -1,0 +1,1 @@
+linked_ui_arrow.detect_arrow_hold = false

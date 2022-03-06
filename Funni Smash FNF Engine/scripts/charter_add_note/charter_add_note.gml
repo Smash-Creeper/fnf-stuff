@@ -25,5 +25,5 @@ function charter_add_note(){
 	}
 	var note = [X,POS,DIR,LENGTH,TYPE]
 	array_push(variable_instance_get(self,"section_notes" + string(c_section)),note)
-	show_debug_message(string(variable_instance_get(self,"section_notes" + string(c_section))))
+	//show_debug_message(string(variable_instance_get(self,"section_notes" + string(c_section))))
 }

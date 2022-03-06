@@ -1,4 +1,4 @@
-//event_inherited();
+event_inherited();
 arrow_type = PAIN_ARROW_MUSTHIT.LEFT
 linked_ui_arrow = battle.arrow[0,0]
 pos = 0

@@ -68,6 +68,8 @@ t_section = 1
 audio_pause_sound(audio_inst)
 audio_pause_sound(audio_vocal)
 
+inst_muted = false
+
 
 //save_path = global.chart_save_path
 //file = song_title//save_path + song_title + ".chart"

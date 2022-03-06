@@ -4,6 +4,7 @@
 ///@arg target_var
 ///@arg speed/duration
 ///@arg *delay
+///@arg *type
 function MoveObject(){
 	{/* Start Here
 	var INST = argument[0]
@@ -51,17 +52,21 @@ function MoveObject(){
 	var A3 = argument[3]
 	var A4 = argument[4]
 	var A5 = 0
+	var A6 = 0
 	if(argument_count > 5){
 		var A5 = argument[5]
 	}
+	if(argument_count > 6){
+		var A6 = argument[6]
+	}
 	if(IsObjectMoving(A0,A1) = false){
-		array_push(global.movingobjs,[A0,A1,A2,A3,A4,A5,false])
+		array_push(global.movingobjs,[A0,A1,A2,A3,A4,A5,A6,false])
 		if(A5 <= 0){
 			variable_instance_set(A0,string(A1),A2)
 		}
 	}else if(IsObjectMoving(A0,A1) = true){
 		StopMoveObject(A0,A1)
-		array_push(global.movingobjs,[A0,A1,A2,A3,A4,A5,false])
+		array_push(global.movingobjs,[A0,A1,A2,A3,A4,A5,A6,false])
 		if(A5 <= 0){
 			variable_instance_set(A0,string(A1),A2)
 		}

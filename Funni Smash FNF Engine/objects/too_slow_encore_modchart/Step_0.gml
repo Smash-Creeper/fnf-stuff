@@ -29,6 +29,14 @@ with(b_event){
 			}
 		}
 	}
+	if(tid = 4 && triggered = true){
+		with(too_slow_encore_modchart){
+			with(ui_arrow){
+				MoveObject(self,"y",y,103,10,0,1)
+				MoveObject(self,"image_angle",image_angle,360,10)
+			}
+		}
+	}
 }
 
 if(funni_arrows = true){
@@ -46,28 +54,7 @@ if(funni_arrows = true){
 if(funni_arrows2){
 	with(ui_arrow){
 		if(arrow_state = 8){
-			switch(arrow_state_default){
-				case ARROW_STATE.LEFT:
-				with(ui_arrow){
-				ui_arrow.x -= 2
-				}
-				break;
-				case ARROW_STATE.DOWN:
-				with(ui_arrow){
-				ui_arrow.y += 2
-				}
-				break;
-				case ARROW_STATE.UP:
-				with(ui_arrow){
-				ui_arrow.y -= 2
-				}
-				break;
-				case ARROW_STATE.RIGHT:
-				with(ui_arrow){
-				ui_arrow.x += 2
-				}
-				break;
-			}
+			y += 2
 		}
 	}
 }

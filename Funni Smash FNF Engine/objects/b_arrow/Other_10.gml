@@ -5,6 +5,7 @@ if(length <= 0){
 }else{
 	locked = true
 	was_locked = true
+	linked_ui_arrow.detect_arrow_hold = true
 }
 
 linked_ui_arrow.linked_player.img_current = 0

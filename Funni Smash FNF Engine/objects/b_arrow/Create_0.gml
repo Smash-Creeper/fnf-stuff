@@ -9,3 +9,8 @@ was_locked = false
 _must_hit = true
 depth = BATTLE_DEPTH.B_ARROW_P1
 alarm[1] = 1
+
+dx = camera.x + x
+dy = camera.y + y
+
+contacted = false

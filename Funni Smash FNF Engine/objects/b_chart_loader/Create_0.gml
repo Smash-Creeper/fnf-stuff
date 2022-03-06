@@ -50,8 +50,9 @@ if(variable_instance_exists(c,"stage")){
 }
 
 ///Load the chart
-event_user(1)
+loaded = false
 
+var count = instance_create_depth(window_get_width()/2,window_get_height()/2,-1000,b_countdown)
 
 //loaded_note = false
 
