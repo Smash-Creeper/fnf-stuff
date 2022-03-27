@@ -4,5 +4,6 @@ if(starting = false){
 		colt = 255/4.25
 		starting = true
 		alarm[0] = 60;
+		global.menu_mus = audio_play_sound(sfx_confirmMenu,0,false)
 	}
 }

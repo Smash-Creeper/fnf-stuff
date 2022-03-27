@@ -13,8 +13,8 @@
   "soundFile": "sfx_chart_tick.ogg",
   "duration": 0.149762,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfx_chart_tick",

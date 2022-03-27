@@ -19,9 +19,6 @@ if(!instance_exists(b_charter_menu) || b_charter_menu._menu_is_extended = false 
 		paused = !paused
 	}
 
-	var crochet = ((60 / bpm) * 1000)
-	var step_crochet = crochet / 4
-
 	if(!paused){
 		if(song_pos >= 0){
 			song_pos = audio_sound_get_track_position(audio_inst)
@@ -42,13 +39,6 @@ if(!instance_exists(b_charter_menu) || b_charter_menu._menu_is_extended = false 
 	}
 
 	camera.y = -40
-
-	///Cool Effects
-	//_3dcam.xto = window_get_width/2 + lengthdir_x(6,funni_spin_siner)
-	//_3dcam.yto = window_get_height/2 + lengthdir_y(6,funni_spin_siner)
-	if(keyboard_check_pressed(ord("C"))){
-	//	_3dcam.cam_enabled = !_3dcam.cam_enabled
-	}
 
 	if(keyboard_check(vk_shift)){
 	dummymouse_y = mouse_y
@@ -162,13 +152,6 @@ if(!instance_exists(b_charter_menu) || b_charter_menu._menu_is_extended = false 
 	if(bar_y >= grid_p1_height){
 		p_section = c_section
 		c_section += 1
-		/*if(variable_instance_exists(self,"section_notes" + string(c_section)) || variable_instance_exists(self,"section_events" + string(c_section))){
-			t_section = c_section + 1
-		}*//*
-		if(variable_instance_exists(self,"section_notes" + string(c_section)) = false || variable_instance_exists(self,"section_events" + string(c_section)) = false){
-			variable_instance_set(self,"section_notes" + string(c_section), array_create(0))
-			variable_instance_set(self,"section_events" + string(c_section), array_create(0))
-		}*/
 	}
 	if(bar_y <= 0 && c_section != 0){
 		p_section = c_section
@@ -183,24 +166,14 @@ if(!instance_exists(b_charter_menu) || b_charter_menu._menu_is_extended = false 
 			room_goto(room_battle)
 		}
 	}
-	/*
-	var snoee = false
-	var i
-	for(i = 0; snoee = true ;i += 1){
-		if(variable_instance_exists(self,"section_notes" + string(i))){
-			var snoee = true
-		}else if(variable_instance_exists(self,"section_events" + string(i))){
-			var snoee = true
-		}
-	}
-	
-	var i
-	for(i = 0; snoee = true ;i += 1){
-		t_section = i + 1
-	}*/
 	{
 		t_section = ceil(getYfromStrum(audio_sound_length(audio_inst)) / grid_p1_height)
 	}
-
-	//global.arrow_speed = arrow_speed
+	var f = file_dropper_get_files()
+	file_dropper_flush();
+	if(array_length(f) > 0 && (string_last_pos(".png",array_get(f,0)) || string_last_pos(".jpg",array_get(f,0))) > 0 && (BG = "" || sprite_exists(BG))){
+		BG = sprite_add(array_get(f,0),0,false,false,0,0)
+	}
+	//load_stage(stage)
+	
 }

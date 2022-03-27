@@ -12,6 +12,7 @@ function Important_Variables(){
 	global.safe_frames = 10
 	global.mercy_length = 0.15
 	global.botplay = true
+	global.onechartmode = false
 	
 	///Dont touch these Variables unless ya know what your doing
 	global.insturms = []
@@ -65,6 +66,7 @@ function Important_Variables(){
 		BOTTOM_LEFT,
 		BOTTOM_MIDDLE,
 		BOTTOM_RIGHT,
+		CUSTOM,
 	}
 	
 	enum BATTLE_DEPTH{
@@ -108,7 +110,15 @@ function Important_Variables(){
 		SPEED
 	}
 	
+	enum MENU_STATE{
+		STORY_MODE,
+		FREEPLAY
+	}
+	
 	global.player_arrowpos = [[106+640,103],[217+640,103],[329+640,103],[441+640,103]]
 	global.enemy_arrowpos = [[106,103],[217,103],[329,103],[441,103]]
+	global.current_week = []
+	global.current_week_song = 0
+	global.menustate = -1
 	
 }

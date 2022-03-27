@@ -1,0 +1,1 @@
+draw_sprite_ext(global.spr_menu_bg,0,x,y,1,1,0,ccol,1)

@@ -19,3 +19,5 @@ switch(_event_type){
 	tid = value
 	break;
 }
+
+loaded = false;

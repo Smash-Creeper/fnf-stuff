@@ -1,2 +1,4 @@
-width -= 5
-height -= 5
+if(debug_mode){
+	width -= 5
+	height -= 5
+}

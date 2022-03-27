@@ -24,5 +24,5 @@ if(img_current > array_length(global.char_img_x[char][state])-1){
 x = ogx + b_stage.stage_asset[b_stage.relative_layer].x//* scroll_factor
 y = ogy + b_stage.stage_asset[b_stage.relative_layer].y//* scroll_factor
 
-scfx = x - scroll_x - camera.x * scroll_factor
-scfy = y - scroll_y - camera.y * scroll_factor
+scfx = lerp(x,camera.x,scroll_factor)//x - scroll_x - (camera.x+((window_get_width()/2))) * scroll_factor
+scfy = lerp(y,camera.y,scroll_factor)//y - scroll_y - (camera.y+((window_get_height()/2))) * scroll_factor

@@ -54,6 +54,7 @@ camera.target = noone
 camera.y = -40
 
 stage = STAGE.STAGE
+stage_is_loaded = false;
 
 //_3dcam.cam_enabled = true
 
@@ -69,6 +70,10 @@ audio_pause_sound(audio_inst)
 audio_pause_sound(audio_vocal)
 
 inst_muted = false
+
+icon = 0
+
+BG = ""
 
 
 //save_path = global.chart_save_path

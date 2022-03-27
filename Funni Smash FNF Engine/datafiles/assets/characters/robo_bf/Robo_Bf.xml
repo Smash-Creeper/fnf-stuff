@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Robo Bf.png">
+	<!-- Created with Adobe Animate version 21.0.9.42677 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Robo BF Down0000" x="0" y="0" width="383" height="361" frameX="0" frameY="0" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0001" x="0" y="0" width="383" height="361" frameX="0" frameY="0" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0002" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0003" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0004" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0005" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0006" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0007" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0008" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0009" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0010" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0011" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0012" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0013" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0014" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0015" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0016" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0017" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0018" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0019" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0020" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0021" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0022" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0023" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0024" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0025" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0026" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Down0027" x="383" y="0" width="368" height="353" frameX="-5" frameY="-9" frameWidth="383" frameHeight="362"/>
+	<SubTexture name="Robo BF Idle0000" x="751" y="0" width="430" height="394" frameX="-1" frameY="-4" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0001" x="751" y="0" width="430" height="394" frameX="-1" frameY="-4" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0002" x="1181" y="0" width="441" height="398"/>
+	<SubTexture name="Robo BF Idle0003" x="1181" y="0" width="441" height="398"/>
+	<SubTexture name="Robo BF Idle0004" x="0" y="398" width="427" height="392" frameX="-1" frameY="-6" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0005" x="0" y="398" width="427" height="392" frameX="-1" frameY="-6" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0006" x="427" y="398" width="418" height="387" frameX="-2" frameY="-11" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0007" x="427" y="398" width="418" height="387" frameX="-2" frameY="-11" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0008" x="845" y="398" width="411" height="385" frameX="-3" frameY="-13" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0009" x="845" y="398" width="411" height="385" frameX="-3" frameY="-13" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0010" x="1256" y="398" width="409" height="385" frameX="-3" frameY="-13" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0011" x="1256" y="398" width="409" height="385" frameX="-3" frameY="-13" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0012" x="1256" y="398" width="409" height="385" frameX="-3" frameY="-13" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Idle0013" x="1256" y="398" width="409" height="385" frameX="-3" frameY="-13" frameWidth="441" frameHeight="398"/>
+	<SubTexture name="Robo BF Right0000" x="0" y="790" width="403" height="399"/>
+	<SubTexture name="Robo BF Right0001" x="0" y="790" width="403" height="399"/>
+	<SubTexture name="Robo BF Right0002" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0003" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0004" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0005" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0006" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0007" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0008" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0009" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0010" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0011" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0012" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo BF Right0013" x="403" y="790" width="388" height="392" frameX="-1" frameY="-7" frameWidth="403" frameHeight="399"/>
+	<SubTexture name="Robo Bf Left0000" x="791" y="790" width="475" height="389"/>
+	<SubTexture name="Robo Bf Left0001" x="791" y="790" width="475" height="389"/>
+	<SubTexture name="Robo Bf Left0002" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0003" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0004" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0005" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0006" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0007" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0008" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0009" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0010" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0011" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0012" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0013" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0014" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0015" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0016" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0017" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0018" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0019" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0020" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0021" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0022" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0023" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0024" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0025" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo Bf Left0026" x="1266" y="790" width="464" height="379" frameX="-11" frameY="-10" frameWidth="475" frameHeight="389"/>
+	<SubTexture name="Robo bf Up0000" x="0" y="1189" width="395" height="446"/>
+	<SubTexture name="Robo bf Up0001" x="0" y="1189" width="395" height="446"/>
+	<SubTexture name="Robo bf Up0002" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0003" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0004" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0005" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0006" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0007" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0008" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0009" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0010" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0011" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0012" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0013" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0014" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0015" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0016" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0017" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0018" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0019" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0020" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0021" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0022" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0023" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0024" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0025" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+	<SubTexture name="Robo bf Up0026" x="395" y="1189" width="372" height="425" frameX="-7" frameY="-21" frameWidth="395" frameHeight="446"/>
+</TextureAtlas>

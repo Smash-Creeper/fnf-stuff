@@ -20,6 +20,8 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"health_inspector_modchart","path":"objects/health_inspector_modchart/health_inspector_modchart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"health_inspector_modchart","path":"objects/health_inspector_modchart/health_inspector_modchart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":88,"eventType":5,"collisionObjectId":null,"parent":{"name":"health_inspector_modchart","path":"objects/health_inspector_modchart/health_inspector_modchart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":89,"eventType":5,"collisionObjectId":null,"parent":{"name":"health_inspector_modchart","path":"objects/health_inspector_modchart/health_inspector_modchart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

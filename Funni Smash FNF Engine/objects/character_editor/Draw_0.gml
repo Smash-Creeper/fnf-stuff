@@ -1,0 +1,4 @@
+if(png_spr != undefined && sprite_exists(png_spr)){
+	draw_char_sprite_ext(png_spr,char,current_animation,current_frame % array_length(global.char_img_x[char][current_animation]),room_width/2,room_height/2,1,1,c_white,1,SPRITE_ORIGIN.CUSTOM,false,origin_x,origin_y)
+	draw_rectangle(room_width/2-origin_x,room_height/2-origin_y,room_width/2 + global.char_img_width[char][current_animation][current_frame % array_length(global.char_img_x[char][current_animation])]-origin_x,room_height/2 + global.char_img_height[char][current_animation][current_frame % array_length(global.char_img_x[char][current_animation])]-origin_y,true)
+}

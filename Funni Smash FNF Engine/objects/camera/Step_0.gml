@@ -11,8 +11,8 @@ if(battle_cam){
 	
 camera_set_view_target(cam,noone)
 camera_set_view_border(cam,width*(scale_x),height*(scale_y))
-var tx = battle.player[battle_cam_target_player].scfx + battle.player[battle_cam_target_player].camoff_x + battle_cam_offset_x
-var ty = battle.player[battle_cam_target_player].scfy + battle.player[battle_cam_target_player].camoff_y + battle_cam_offset_y
+var tx = battle.player[battle_cam_target_player].x + battle.player[battle_cam_target_player].camoff_x + battle_cam_offset_x
+var ty = battle.player[battle_cam_target_player].y + battle.player[battle_cam_target_player].camoff_y + battle_cam_offset_y
 /*if(((round(x) != round(tx)) || (round(y) != round(ty))) && MovingObject(camera) = false){
 	MoveObject(camera,"x",tx,0,battle_cam_duration)
 	MoveObject(camera,"y",ty,0,battle_cam_duration)

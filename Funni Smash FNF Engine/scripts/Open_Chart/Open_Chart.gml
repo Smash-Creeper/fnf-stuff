@@ -2,7 +2,7 @@
 ///@arg difficulty*
 function Open_Chart(){
 	var S = argument[0];
-	var cep = (debug_mode ? "" : "charts\\")
+	var cep = (debug_mode ? "" : working_directory + "\\charts\\")
 	global.chart_file = global.chart_save_path + cep + S + ".chart"
 	global.event_file = global.chart_save_path + cep + S + ".event"
 }

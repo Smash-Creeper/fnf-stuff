@@ -31,6 +31,12 @@ if(variable_instance_exists(_data,"player0")){
 if(variable_instance_exists(_data,"player1")){
 	global.player[1] = _data.player1
 }
+if(variable_instance_exists(_data,"icon")){
+	icon = _data.icon
+}
+if(variable_instance_exists(_data,"stage")){
+	stage = _data.stage
+}
 
 audio_pause_sound(audio_inst)
 audio_pause_sound(audio_vocal)

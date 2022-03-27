@@ -4,7 +4,7 @@ player[0] = instance_create_depth(0,0,BATTLE_DEPTH.CHARACTER1,global.player[0])
 player[1] = instance_create_depth(0,0,BATTLE_DEPTH.CHARACTER2,global.player[1])
 gf = instance_create_depth(0,0,BATTLE_DEPTH.CHARACTER3,global.gf)
 stage = instance_create_depth(0,0,0,b_stage)
-stage.stage = loader.stage
+stage.stage = global.loaderstage
 
 player[0].x = array_get(stage.player_cords[0],0)
 player[0].y = array_get(stage.player_cords[0],1)

@@ -17,3 +17,9 @@ if(InputGet(global.input_confirm) = INPUT_STATE.PRESSED){
 	var S = array_get(songs,selected)
 	Play_Song(S)
 }
+if(InputGet(global.input_cancel) == INPUT_STATE.PRESSED){
+	room_goto(room_menu)
+}
+if(keyboard_check_pressed(ord("1"))){
+	global.onechartmode = !global.onechartmode
+}

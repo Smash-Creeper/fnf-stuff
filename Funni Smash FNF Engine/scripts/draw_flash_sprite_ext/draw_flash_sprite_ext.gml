@@ -5,9 +5,13 @@
 ///@arg y
 ///@arg xscale
 ///@arg yscale
+///@arg angle
 ///@arg col
 ///@arg alpha
 ///@arg *origin
+///@arg *frame_priority
+///@arg *origin_x
+///@arg *origin_y
 function draw_flash_sprite_ext(){
 	var SPR = argument[0]
 	var TIT = argument[1]
@@ -16,15 +20,22 @@ function draw_flash_sprite_ext(){
 	var Y = argument[4]
 	var XSCALE = argument[5]
 	var YSCALE = argument[6]
-	var COLOR = argument[7]
-	var ALPHA = argument[8]
+	var ANGLE = argument[7]
+	var COLOR = argument[8]
+	var ALPHA = argument[9]
 	var ORIGIN = SPRITE_ORIGIN.CENTER_MIDDLE
 	var FPRIORITY = false;
-	if(argument_count > 9){
-	var ORIGIN = argument[9]
-	}
 	if(argument_count > 10){
-		var FPRIORITY = argument[10]
+	var ORIGIN = argument[10]
+	}
+	if(argument_count > 11){
+		var FPRIORITY = argument[11]
+	}
+	if(argument_count > 12){
+		var OX = argument[12]
+	}
+	if(argument_count > 13){
+		var OY = argument[13]
 	}
 	
 	var ix = real(global.img_x[TIT][SUB])
@@ -39,8 +50,18 @@ function draw_flash_sprite_ext(){
 	var iyfw = /*(is_real(ifh) ? ifh : ih)*/(ih >= ifh ? ih : (is_real(ifh) && FPRIORITY = true ? ifh : ih))
 	switch(ORIGIN){
 		case SPRITE_ORIGIN.CENTER_MIDDLE:
-		var TX = X - (((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
-		var TY = Y - (((iyfw/100)*(YSCALE*100))/2) + (((ify/100)*(YSCALE*100))/2) //+ ify
+		///Thanks to flyingsaucerinvasion on reddit for answering this a question like 2 years ago that helpped me make this work
+		/*var xx = (ixfw/2);
+		var yy = (iyfw/2);
+		var TX = X + xx*dcos(ANGLE) + yy * dsin(ANGLE)//+lengthdir_x(((ixfw+ifx)*XSCALE)/2,ANGLE+135)+ (((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
+		var TY = Y - xx*dsin(ANGLE) + yy * dcos(ANGLE)//+lengthdir_y(((iyfw+ify)*YSCALE)/2,ANGLE+135)+ (((iyfw/100)*(YSCALE*100))/2) + (((ify/100)*(YSCALE*100))/2) //+ ify
+		*/
+		var _x = -(ixfw*XSCALE)/2
+		var _y = -(iyfw*YSCALE)/2
+		var _c = dcos(ANGLE);
+		var _s = dsin(ANGLE);
+		var TX = (X)+_c*_x+_s*_y
+		var TY = (Y)-_s*_x+_c*_y
 		break;
 		case SPRITE_ORIGIN.TOP_LEFT:
 		var TX = X// - (((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
@@ -54,7 +75,12 @@ function draw_flash_sprite_ext(){
 		var TX = X - (((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
 		var TY = Y
 		break;
+		case SPRITE_ORIGIN.CUSTOM:
+		var TX = X - OX
+		var TY = Y - OY
+		break;
 	}
 	
-	draw_sprite_part_ext(SPR,0,ix,iy,ixfw,iyfw,TX,TY,XSCALE,YSCALE,COLOR,ALPHA)
+	//draw_sprite_part_ext(SPR,0,ix,iy,ixfw,iyfw,TX,TY,XSCALE,YSCALE,COLOR,ALPHA)
+	draw_sprite_general(SPR,0,ix,iy,ixfw,iyfw,TX,TY,XSCALE,YSCALE,ANGLE,COLOR,COLOR,COLOR,COLOR,ALPHA)
 }

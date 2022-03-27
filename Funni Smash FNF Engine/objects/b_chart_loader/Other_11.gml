@@ -7,7 +7,7 @@ buffer_delete(_buffer)
 var _loaded_data = json_parse(_string)
 
 var chart = array_pop(_loaded_data)*/
-
+audio_stop_sound(global.menu_mus)
 var _data = array_get(THE_CHART,0)
 //show_debug_message(string(_data))
 song_title = string(_data.song_title)
@@ -23,9 +23,13 @@ if(variable_instance_exists(_data,"bpm")){
 	global.bpm = _data.bpm
 }
 
+if(variable_instance_exists(_data,"stage")){
+	stage = _data.stage
+}
+
 if(object_exists(asset_get_index(string(song_title) + "_modchart"))){
 	mod_chart = instance_create_depth(0,0,0,asset_get_index(string(song_title) + "_modchart"))
-	show_debug_message("It Exists!")
+//	show_debug_message("It Exists!")
 }
 
 /*audio_pause_sound(audio_inst)
@@ -82,8 +86,8 @@ repeat((array_length(THE_EVENT_CHART))){
 }
 c_section = 0
 
-show_debug_message(string(arrow_speed))
-show_debug_message(string(global.arrow_speed))
+//show_debug_message(string(arrow_speed))
+//show_debug_message(string(global.arrow_speed))
 
 if(global.playtesttime > 0.00){
 	audio_sound_set_track_position(song_inst,global.playtesttime)

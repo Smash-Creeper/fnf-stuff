@@ -14,3 +14,5 @@ dx = camera.x + x
 dy = camera.y + y
 
 contacted = false
+
+loaded = false

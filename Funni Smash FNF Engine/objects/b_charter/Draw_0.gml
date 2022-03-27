@@ -1,6 +1,10 @@
 if(chart_is_loaded = true){
-	draw_fnf_stage_charter(stage)
-
+	//draw_fnf_stage_charter(stage)
+	
+	if(BG != "" && sprite_exists(BG)){
+		draw_sprite_ext(BG,0,0,-40,funni_scaler(BG,0,1280),funni_scaler(BG,1,720),0,c_white,1);
+	}
+	
 	draw_grid(grid_p2_x,grid_y,grid_size,grid_size,ui_arrow_count,section_square_count,c_ltgray,c_gray)
 	draw_grid(grid_p1_x,grid_y,grid_size,grid_size,ui_arrow_count,section_square_count,c_ltgray,c_gray)
 	draw_sprite_ext(spr_pixel,0,grid_p2_x+grid_size*ui_arrow_count,grid_y,grid_size,grid_p1_height,0,c_dkgray,1)
@@ -33,8 +37,8 @@ if(chart_is_loaded = true){
 			draw_text(0,40,string(POS))
 			draw_text(0,60,string(DIR))
 			var ALP = ((POS > getYfromStrum(song_pos)) ? 1 : 0.5)
-			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR,0,X,POS - (grid_p1_height * c_section),sx,sy,c_white,ALP)
-			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR+4,0,X,POS - (grid_p1_height * c_section),(1/shw) * 10,(1/shh) * getYfromStrum(LENGTH),image_blend,ALP,SPRITE_ORIGIN.TOP_MIDDLE)
+			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR,0,X,POS - (grid_p1_height * c_section),sx,sy,image_angle,c_white,ALP)
+			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR+4,0,X,POS - (grid_p1_height * c_section),(1/shw) * 10,(1/shh) * getYfromStrum(LENGTH),image_angle,image_blend,ALP,SPRITE_ORIGIN.TOP_MIDDLE)
 			draw_text_color(X,POS - (grid_p1_height * c_section),array_get(array_get(NC,proc),1),c_white,c_white,c_white,c_white,1)
 			proc += 1
 		}
@@ -92,7 +96,7 @@ if(chart_is_loaded = true){
 			var sx = 1/global.img_width[12 + proc][0] * grid_size
 			var sy = 1/global.img_height[12 + proc][0] * grid_size
 			var mx = cg + proc*grid_size + grid_size/2
-			draw_flash_sprite_ext(global.arrow_sprites[arrow_type],12 + proc,0,mx,dummymouse_y,sx,sy,c_white,1)
+			draw_flash_sprite_ext(global.arrow_sprites[arrow_type],12 + proc,0,mx,dummymouse_y,sx,sy,image_angle,c_white,1)
 		}
 		proc += 1
 		tproc += 1

@@ -17,9 +17,9 @@ function arrow_nearest(){
 		proc += 1
 	}
 	if(N != noone || N != undefined && instance_exists(N)){
-		show_debug_message("nearest note is at " + string(N.x) + "," + string(N.y) + "at POS: " + string(N.pos) + "DIR: " + string(ArwMustToDir(N.arrow_type)));
+	//	show_debug_message("nearest note is at " + string(N.x) + "," + string(N.y) + "at POS: " + string(N.pos) + "DIR: " + string(ArwMustToDir(N.arrow_type)));
 	}else{
-		show_debug_message("nearest note is no where to be found");
+	//	show_debug_message("nearest note is no where to be found");
 	}
 	return N;
 }

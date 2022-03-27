@@ -20,12 +20,14 @@ if(linked_player != noone && instance_exists(linked_player)){
 	cpu = linked_player.cpu
 }
 
-_self_surface = surface_create(1280,820)
+//_self_surface = surface_create(1280,820)
 
 _target_note = noone
 
 dx = camera.x + x
 dy = camera.y + y
+
+input_acceptable = true
 
 
 

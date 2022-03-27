@@ -6,14 +6,19 @@ State_Custom();
 FlashSprite_Custom();
 Important_Variables();
 MoveInit();
+file_dropper_init();
 instance_create_depth(0,0,0,camera)
 //instance_create_depth(0,0,0,_3dcam)
 
-//global.chart_save_path = working_directory
-//global.event_save_path = working_directory
+if(debug_mode){
+	Open_Chart_File()
+}else{
+	global.chart_save_path = ""//working_directory
+	global.event_save_path = ""//working_directory
+}
+volume = 1
 
-Open_Chart_File()
-
+menu_mus = audio_play_sound(sfx_freakyMenu,0,true)
 
 /*
 var ntsp = string_delete(save_path,string_length(save_path)-6,6)

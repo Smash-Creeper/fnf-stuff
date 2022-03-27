@@ -9,6 +9,9 @@
 ///@arg col
 ///@arg alpha
 ///@arg *origin
+///@arg *frame_priority
+///@arg *origin_x
+///@arg *origin_y
 function draw_char_sprite_ext(){
 	var SPR = argument[0]
 	var CHAR = argument[1]
@@ -27,6 +30,12 @@ function draw_char_sprite_ext(){
 	}
 	if(argument_count > 11){
 		var FPRIORITY = argument[11]
+	}
+	if(argument_count > 12){
+		var OX = argument[12]
+	}
+	if(argument_count > 13){
+		var OY = argument[13]
 	}
 	
 	var ix = real(global.char_img_x[CHAR][TIT][SUB])
@@ -61,6 +70,10 @@ function draw_char_sprite_ext(){
 		case SPRITE_ORIGIN.BOTTOM_MIDDLE:
 		var TX = X - (((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
 		var TY = Y - (((iyfw/100)*(YSCALE*100))) + (((ify/100)*(YSCALE*100)))
+		break;
+		case SPRITE_ORIGIN.CUSTOM:
+		var TX = X - OX
+		var TY = Y - OY
 		break;
 	}
 	

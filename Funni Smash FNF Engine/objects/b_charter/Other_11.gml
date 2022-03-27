@@ -18,6 +18,8 @@ var _data = {
 	bpm : bpm,
 	player0 : global.player[0],
 	player1 : global.player[1],
+	icon : icon,
+	stage : stage,
 }
 
 array_push(chart,_data)

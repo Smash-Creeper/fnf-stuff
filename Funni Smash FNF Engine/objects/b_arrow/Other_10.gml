@@ -1,6 +1,7 @@
 ///@desc Note Hit
-show_debug_message("Arrow Hit!")
+//show_debug_message("Arrow Hit!")
 if(length <= 0){
+	linked_ui_arrow.arrow_state = 8
 	instance_destroy(self);
 }else{
 	locked = true

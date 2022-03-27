@@ -93,6 +93,31 @@ function FlashSprite_Custom(){
 	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.DOWN,"Sensai Down")
 	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.UP,"Sensai Up")
 	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.RIGHT,"Sensai Right")
+	var FP = "./assets/characters/lemon/Lemon Sans"
+	global.spr_lemon = sprite_add(FP + ".png",0,false,false,0,0)
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.IDLE,"Lemon2")
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.LEFT,"Lemon2")
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.DOWN,"Lemon2")
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.UP,"Lemon2")
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.RIGHT,"Lemon2")
+	var FP = "./assets/characters/fa_bf/BF"
+	global.spr_fa_boyfriend = sprite_add(FP + ".png",0,false,false,0,0)
+	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.IDLE,"BF Idle")
+	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.LEFT,"Bf Left")
+	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.DOWN,"BF Down")
+	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.UP,"bf Up")
+	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.RIGHT,"BF Right")
+	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.LEFT_MISSED,"BF Miss Left")
+	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.UP_MISSED,"BF Miss Up")
+	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.DOWN_MISSED,"BF Miss Down")
+	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.RIGHT_MISSED,"BF Miss Right")
+	var FP = "./assets/characters/robo_bf/Robo_Bf"
+	global.spr_robo_boyfriend = sprite_add(FP + ".png",0,false,false,0,0)
+	CharAnim_Define(FP,CHARACTER.ROBO_BF,PLAYER_STATE.IDLE,"Robo BF Idle")
+	CharAnim_Define(FP,CHARACTER.ROBO_BF,PLAYER_STATE.LEFT,"Robo Bf Left")
+	CharAnim_Define(FP,CHARACTER.ROBO_BF,PLAYER_STATE.DOWN,"Robo BF Down")
+	CharAnim_Define(FP,CHARACTER.ROBO_BF,PLAYER_STATE.UP,"Robo bf Up")
+	CharAnim_Define(FP,CHARACTER.ROBO_BF,PLAYER_STATE.RIGHT,"Robo BF Right")
 	
 	///Stages
 	var FP = "./assets/stages/stage/"
@@ -100,6 +125,11 @@ function FlashSprite_Custom(){
 	global.stage_sprite[STAGE.STAGE][1] = sprite_add(FP + "stagefront.png",0,false,false,0,0)
 //	global.stage_sprite[STAGE.STAGE][2] = sprite_add(FP + "stagelight.png",0,false,false,0,0)
 	global.stage_sprite[STAGE.STAGE][2] = sprite_add(FP + "stagecurtains.png",0,false,false,0,0)
+	var FP = "./assets/stages/philly/"
+	global.stage_sprite[STAGE.PHILLY][0] = sprite_add(FP + "sky.png",0,false,false,0,0)
+	global.stage_sprite[STAGE.PHILLY][1] = sprite_add(FP + "city.png",0,false,false,0,0)
+	global.stage_sprite[STAGE.PHILLY][2] = sprite_add(FP + "behindTrain.png",0,false,false,0,0)
+	global.stage_sprite[STAGE.PHILLY][3] = sprite_add(FP + "street.png",0,false,false,0,0)
 	
 	///Other Sprites
 	global.spr_event_note = sprite_add("./assets/shared/spr_event_placeholder.png",0,false,false,20,20)
@@ -110,11 +140,21 @@ function FlashSprite_Custom(){
 	global.spr_prsstart = sprite_add(FP + ".png",0,false,false,0,0)
 	FlashImg_Define(FP,OTHER.PRESS_START,"Press Enter to Begin")
 	FlashImg_Define(FP,OTHER.PRESSED_START,"ENTER PRESSED")
+	var FP = "./assets/shared/menuDesat"
+	global.spr_menu_bg = sprite_add(FP + ".png",0,false,false,0,0)
 	
 	var FP = "./assets/shared/"
 	global.spr_countdown[0] = sprite_add(FP + "ready.png",0,false,true,756/2,364/2)
 	global.spr_countdown[1] = sprite_add(FP + "set.png",0,false,true,702/2,322/2)
 	global.spr_countdown[2] = sprite_add(FP + "go.png",0,false,true,558/2,430/2)
+	var FP = "./assets/shared/FNF_main_menu_assets"
+	global.spr_menu = sprite_add(FP + ".png",0,false,false,0,0)
+	FlashImg_Define(FP,OTHER.STORY_MODE,"story mode basic")
+	FlashImg_Define(FP,OTHER.FREEPLAY,"freeplay basic")
+	FlashImg_Define(FP,OTHER.OPTIONS,"options basic")
+	FlashImg_Define(FP,OTHER.STORY_MODE_SELECTED,"story mode white")
+	FlashImg_Define(FP,OTHER.FREEPLAY_SELECTED,"freeplay white")
+	FlashImg_Define(FP,OTHER.OPTIONS_SELECTED,"options white")
 	
 	
 }

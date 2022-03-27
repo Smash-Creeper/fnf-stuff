@@ -10,11 +10,11 @@ file = global.chart_file//global.chart_save_path + string(song_title) + ".chart"
 
 var _buffer = buffer_load(global.chart_file);
 
-show_debug_message(global.chart_file)
+//show_debug_message(global.chart_file)
 
 var _string = buffer_read(_buffer,buffer_string);
 buffer_delete(_buffer)
-show_debug_message(_string)
+//show_debug_message(_string)
 var _loaded_data = json_parse(_string)
 
 var chart = array_pop(_loaded_data)
@@ -44,9 +44,9 @@ if(variable_instance_exists(c,"player1")){
 	global.player[1] = b_player_dad
 }
 if(variable_instance_exists(c,"stage")){
-	stage = c.stage
+	global.loaderstage = c.stage
 }else{
-	stage = 0
+	global.loaderstage = 0
 }
 
 ///Load the chart
@@ -55,5 +55,9 @@ loaded = false
 var count = instance_create_depth(window_get_width()/2,window_get_height()/2,-1000,b_countdown)
 
 //loaded_note = false
+
+played = false
+
+audio_stop_sound(global.menu_mus)
 
 alarm[0] = 1

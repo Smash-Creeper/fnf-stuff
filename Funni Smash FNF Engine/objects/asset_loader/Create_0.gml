@@ -15,4 +15,4 @@ scfy = 0
 
 tdepth = 0
 depth = tdepth
-event_user(0)
+alarm[0] = 1
