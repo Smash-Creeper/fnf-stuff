@@ -75,6 +75,7 @@ icon = 0
 
 BG = ""
 
+modchart = noone
 
 //save_path = global.chart_save_path
 //file = song_title//save_path + song_title + ".chart"

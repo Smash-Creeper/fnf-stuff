@@ -20,6 +20,8 @@ var _data = {
 	player1 : global.player[1],
 	icon : icon,
 	stage : stage,
+	modchart : modchart,
+	uiarrows : ui_arrow_count,
 }
 
 array_push(chart,_data)

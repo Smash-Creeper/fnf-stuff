@@ -14,6 +14,6 @@ cpu = false
 
 _p_slot = 0
 
-icon_index = 1
+icon_index = 26
 
 show_debug_message("Im Player " + string(_p_slot) + ", and I exist at" + string(x) + "," + string(y))

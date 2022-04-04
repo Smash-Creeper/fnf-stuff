@@ -27,9 +27,12 @@ if(variable_instance_exists(_data,"stage")){
 	stage = _data.stage
 }
 
-if(object_exists(asset_get_index(string(song_title) + "_modchart"))){
-	mod_chart = instance_create_depth(0,0,0,asset_get_index(string(song_title) + "_modchart"))
-//	show_debug_message("It Exists!")
+if(variable_instance_exists(_data,"modchart") && (_data.modchart != string(noone) || _data.modchart >= 0)){
+	mod_chart = instance_create_depth(0,0,0,asset_get_index(string(_data.modchart)))
+}else{
+	if(object_exists(asset_get_index(string(song_title) + "_modchart"))){
+		mod_chart = instance_create_depth(0,0,0,asset_get_index(string(song_title) + "_modchart"))
+	}
 }
 
 /*audio_pause_sound(audio_inst)
@@ -89,7 +92,7 @@ c_section = 0
 //show_debug_message(string(arrow_speed))
 //show_debug_message(string(global.arrow_speed))
 
-if(global.playtesttime > 0.00){
+if(global.playtesttime >= 0.01){
 	audio_sound_set_track_position(song_inst,global.playtesttime)
 	audio_sound_set_track_position(song_vocals,global.playtesttime)
 	song_pos = global.playtesttime;

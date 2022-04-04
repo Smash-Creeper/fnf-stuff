@@ -52,8 +52,8 @@ function draw_char_sprite_ext(){
 	var TY = Y - (((iyfw/100)*(YSCALE*100))/2) + (((ify/100)*(YSCALE*100))/2) //+ ify
 	switch(ORIGIN){
 		case SPRITE_ORIGIN.CENTER_MIDDLE:
-		var TX = X - (((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
-		var TY = Y - (((iyfw/100)*(YSCALE*100))/2) + (((ify/100)*(YSCALE*100))/2) //+ ify
+		var TX = X -((ixfw)/2) * XSCALE//- (((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
+		var TY = Y -((iyfw)/2) * YSCALE//- (((iyfw/100)*(YSCALE*100))/2) + (((ify/100)*(YSCALE*100))/2) //+ ify
 		break;
 		case SPRITE_ORIGIN.TOP_LEFT:
 		var TX = X// - (((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
@@ -68,7 +68,7 @@ function draw_char_sprite_ext(){
 		var TY = Y
 		break;
 		case SPRITE_ORIGIN.BOTTOM_MIDDLE:
-		var TX = X - (((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
+		var TX = X - ((ixfw)*XSCALE)/2 //(((ixfw/100)*(XSCALE*100))/2) + (((ifx/100)*(XSCALE*100))/2) //+ ifx
 		var TY = Y - (((iyfw/100)*(YSCALE*100))) + (((ify/100)*(YSCALE*100)))
 		break;
 		case SPRITE_ORIGIN.CUSTOM:

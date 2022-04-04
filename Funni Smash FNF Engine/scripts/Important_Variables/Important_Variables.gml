@@ -13,6 +13,8 @@ function Important_Variables(){
 	global.mercy_length = 0.15
 	global.botplay = true
 	global.onechartmode = false
+	global.hp = 50
+	global.hpmax = 100
 	
 	///Dont touch these Variables unless ya know what your doing
 	global.insturms = []
@@ -52,6 +54,8 @@ function Important_Variables(){
 	global.playtesttime = 0.00
 	global.chart_file = ""
 	global.event_file = ""
+	
+	global.hp_gameover = 0;
 	
 //	global.chart_save_path = "C:/Users/user/Desktop/Sh/gmstuff/GitHub/Smash-Creeper-Games-Backups/Smashs Funni FNF Engine/datafiles/charts/"
 //	global.event_save_path = "C:/Users/user/Desktop/Sh/gmstuff/GitHub/Smash-Creeper-Games-Backups/Smashs Funni FNF Engine/datafiles/charts/"

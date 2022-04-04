@@ -7,5 +7,5 @@ if(length <= 0){
 	locked = true
 	was_locked = true
 }
-
+global.hp += 0
 //char_play_anim_as_arrow(linked_ui_arrow.arrow_state_default+linked_ui_arrow.arrow_state)

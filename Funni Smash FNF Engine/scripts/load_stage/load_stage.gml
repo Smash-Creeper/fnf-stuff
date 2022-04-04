@@ -113,6 +113,24 @@ function load_stage(){
 			//	event_perform(ev_room_start,0)
 			}
 			break;
+			
+			case 2:
+			selfscroll_factor = 0.3
+			stage_asset[0] = instance_create_depth(0,0,BATTLE_DEPTH.STAGE_LOW,epic_stage)
+			player_cords[0] = [470,450]
+			player_cords[1] = [-200,400]
+			gf_cords = [150,485]
+			relative_layer = 0
+			with(camera){
+				zoom = 1.05
+				if(instance_exists(b_chart_loader)){
+				battle_cam = true
+				}
+				battle_cam_target_player = 0
+			//	event_perform(ev_room_start,0)
+			}
+			break;
+			
 			default:
 			selfscroll_factor = 0.9
 			var proc = 0

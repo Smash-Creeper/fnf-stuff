@@ -12,6 +12,7 @@ function State_Custom(){
 		RIGHT_MISSED,
 		IDLE,
 		GAME_OVER,
+		GAME_OVER_CONTINUE,
 		///Character Specific Animations
 		BF_PEACE,
 	}

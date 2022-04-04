@@ -15,19 +15,33 @@ function MoveStep(){
 		var DELAY = array_get(MOBJ,5)
 		var TYPE = array_get(MOBJ,6)
 		var STARTED = array_get(MOBJ,7)
-		var CURRENTVAR = variable_instance_get(OBJ,VAR)
+		var OBJGLOBAL = (OBJ = global ? true : false)
+		//show_debug_message(OBJGLOBAL ? "its step global": "its not step global")
+		var CURRENTVAR = (OBJGLOBAL = false ? variable_instance_get(OBJ,VAR) : variable_global_get(VAR))
 		if(DELAY <= 0){
 			if(STARTED = false){
-				variable_instance_set(OBJ,VAR,START)
+				if(OBJGLOBAL){
+					variable_global_set(VAR,START)
+				}else{
+					variable_instance_set(OBJ,VAR,START)
+				}
 				array_set(MOBJ,7,true)
 			}
-			if(instance_exists(OBJ) && OBJ != undefined && CURRENTVAR != undefined){
+			if((instance_exists(OBJ) && OBJ != undefined && CURRENTVAR != undefined) || (OBJGLOBAL = true && CURRENTVAR != undefined)){
 				var ADDME = (TARGET - (TYPE = 0 ? START : CURRENTVAR)) / SPDUR
 				CURRENTVAR += ADDME
-				variable_instance_set(OBJ,VAR,CURRENTVAR)
+				if(OBJGLOBAL){
+					variable_global_set(VAR,CURRENTVAR)
+				}else{
+					variable_instance_set(OBJ,VAR,CURRENTVAR)
+				}
 			
 				if(CURRENTVAR/SPDUR = TARGET/SPDUR){
-					variable_instance_set(OBJ,VAR,TARGET)
+					if(OBJGLOBAL){
+						variable_global_set(VAR,TARGET)
+					}else{
+						variable_instance_set(OBJ,VAR,TARGET)
+					}
 					array_delete(global.movingobjs,proc,1)
 					break;
 				}

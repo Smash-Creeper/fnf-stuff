@@ -72,6 +72,8 @@ function FlashSprite_Custom(){
 	CharAnim_Define(FP,CHARACTER.BF,PLAYER_STATE.UP_MISSED,"BF NOTE UP MISS")
 	CharAnim_Define(FP,CHARACTER.BF,PLAYER_STATE.DOWN_MISSED,"BF NOTE DOWN MISS")
 	CharAnim_Define(FP,CHARACTER.BF,PLAYER_STATE.RIGHT_MISSED,"BF NOTE RIGHT MISS")
+	CharAnim_Define(FP,CHARACTER.BF,PLAYER_STATE.GAME_OVER,"BF Dead Loop")
+	CharAnim_Define(FP,CHARACTER.BF,PLAYER_STATE.GAME_OVER_CONTINUE,"BF Dead confirm")
 	var FP = "./assets/characters/dad/DADDY_DEAREST"
 	global.spr_daddy_dearest = sprite_add(FP + ".png",0,false,false,0,0)
 	CharAnim_Define(FP,CHARACTER.DAD,PLAYER_STATE.IDLE,"Dad idle dance")
@@ -95,11 +97,11 @@ function FlashSprite_Custom(){
 	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.RIGHT,"Sensai Right")
 	var FP = "./assets/characters/lemon/Lemon Sans"
 	global.spr_lemon = sprite_add(FP + ".png",0,false,false,0,0)
-	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.IDLE,"Lemon2")
-	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.LEFT,"Lemon2")
-	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.DOWN,"Lemon2")
-	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.UP,"Lemon2")
-	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.RIGHT,"Lemon2")
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.IDLE,"Lemon Sans Idle")
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.LEFT,"Lemon Sans Left")
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.DOWN,"Lemon Down")
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.UP,"Lemon Up")
+	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.RIGHT,"Lemon Sans Right")
 	var FP = "./assets/characters/fa_bf/BF"
 	global.spr_fa_boyfriend = sprite_add(FP + ".png",0,false,false,0,0)
 	CharAnim_Define(FP,CHARACTER.FA_BF,PLAYER_STATE.IDLE,"BF Idle")
@@ -147,6 +149,7 @@ function FlashSprite_Custom(){
 	global.spr_countdown[0] = sprite_add(FP + "ready.png",0,false,true,756/2,364/2)
 	global.spr_countdown[1] = sprite_add(FP + "set.png",0,false,true,702/2,322/2)
 	global.spr_countdown[2] = sprite_add(FP + "go.png",0,false,true,558/2,430/2)
+	global.spr_icons = sprite_add(FP + "iconGrid.png",0,false,false,0,0)
 	var FP = "./assets/shared/FNF_main_menu_assets"
 	global.spr_menu = sprite_add(FP + ".png",0,false,false,0,0)
 	FlashImg_Define(FP,OTHER.STORY_MODE,"story mode basic")
@@ -155,6 +158,9 @@ function FlashSprite_Custom(){
 	FlashImg_Define(FP,OTHER.STORY_MODE_SELECTED,"story mode white")
 	FlashImg_Define(FP,OTHER.FREEPLAY_SELECTED,"freeplay white")
 	FlashImg_Define(FP,OTHER.OPTIONS_SELECTED,"options white")
+	
+	var FP = "./assets/shared/iconGrid"
+	
 	
 	
 }

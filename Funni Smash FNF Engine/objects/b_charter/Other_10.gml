@@ -37,6 +37,12 @@ if(variable_instance_exists(_data,"icon")){
 if(variable_instance_exists(_data,"stage")){
 	stage = _data.stage
 }
+if(variable_instance_exists(_data,"uiarrows")){
+	ui_arrow_count = _data.uiarrows
+}
+if(variable_instance_exists(_data,"modchart")){
+	modchart = _data.modchart
+}
 
 audio_pause_sound(audio_inst)
 audio_pause_sound(audio_vocal)

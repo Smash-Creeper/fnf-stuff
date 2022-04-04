@@ -60,4 +60,6 @@ played = false
 
 audio_stop_sound(global.menu_mus)
 
+global.hp = 50
+
 alarm[0] = 1

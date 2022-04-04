@@ -62,13 +62,25 @@ function MoveObject(){
 	if(IsObjectMoving(A0,A1) = false){
 		array_push(global.movingobjs,[A0,A1,A2,A3,A4,A5,A6,false])
 		if(A5 <= 0){
-			variable_instance_set(A0,string(A1),A2)
+			if(A0 = global){
+				variable_global_set(string(A1),A2)
+			//	show_debug_message("its global")
+			}else{
+			//	show_debug_message("its notglobal")
+				variable_instance_set(A0,string(A1),A2)
+			}
 		}
 	}else if(IsObjectMoving(A0,A1) = true){
 		StopMoveObject(A0,A1)
 		array_push(global.movingobjs,[A0,A1,A2,A3,A4,A5,A6,false])
 		if(A5 <= 0){
-			variable_instance_set(A0,string(A1),A2)
+			if(A0 = global){
+			//	show_debug_message("its global")
+				variable_global_set(string(A1),A2)
+			}else{
+			//	show_debug_message("its not global")
+				variable_instance_set(A0,string(A1),A2)
+			}
 		}
 	}
 }

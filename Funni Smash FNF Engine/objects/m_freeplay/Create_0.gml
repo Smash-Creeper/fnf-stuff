@@ -1,5 +1,5 @@
 //songs = ["pibblammed","atrocity","lemon_sounds","quite_the_sensation","health_inspector","too_slow_encore"]
-songs = ["atrocity","lemon_sounds","quite_the_sensation","health_inspector","health_inspector_angus_chart"]
+songs = ["atrocity","momentium","lemon_sounds","quite_the_sensation","health_inspector","health_inspector_angus_chart","i-just-got-shot"]
 icons = []
 selected = 0
 selected_d = 0

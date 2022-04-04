@@ -1,2 +1,2 @@
-squarex = x
-squarey = y
+global.squarex = x
+global.squarey = y

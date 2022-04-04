@@ -24,8 +24,8 @@ if(img_current > array_length(global.char_img_x[char][state])-1){
 	img_current = 0
 }
 
-x = ogx + b_stage.stage_asset[b_stage.relative_layer].x - real(global.char_img_frameWidth[char][state][img_current])/2//* scroll_factor
-y = ogy + b_stage.stage_asset[b_stage.relative_layer].y - real(global.char_img_frameHeight[char][state][img_current])/2//* scroll_factor
+x = ogx + b_stage.stage_asset[b_stage.relative_layer].x - real(global.char_img_width[char][state][img_current])/2//* scroll_factor
+y = ogy + b_stage.stage_asset[b_stage.relative_layer].y - real(global.char_img_height[char][state][img_current])/2//* scroll_factor
 
 scfx = lerp(x,camera.x,scroll_factor)//x - scroll_x - (camera.x+((window_get_width()/2))) * scroll_factor
 scfy = lerp(y,camera.y,scroll_factor)//y - scroll_y - (camera.y+((window_get_height()/2))) * scroll_factor
