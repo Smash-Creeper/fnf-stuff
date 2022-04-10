@@ -48,6 +48,11 @@ if(variable_instance_exists(c,"stage")){
 }else{
 	global.loaderstage = 0
 }
+if(variable_instance_exists(c,"uiarrows")){
+	global.ui_arrows = c.uiarrows
+}else{
+	global.ui_arrows = 4
+}
 
 ///Load the chart
 loaded = false

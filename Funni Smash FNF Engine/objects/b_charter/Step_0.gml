@@ -68,19 +68,46 @@ if(!instance_exists(b_charter_menu) || b_charter_menu._menu_is_extended = false 
 
 	var proc = 0
 	var grid = 2
+	var ismid = 0
+	var AE = proc - ismid
 	repeat(ui_arrow_count*2){
 		var cg = variable_instance_get(self,"grid_p" + string(grid) + "_x")
+		var PRIORITYLIST = function(){
+				var D = argument[0];
+				if(ui_arrow_count % 2 = 1 && ui_arrow_count > 4){
+					switch(D){
+						case 0:
+						return 0;
+						break;
+						case 1:
+						return 1;
+						break;
+						case 2:
+						return 4;
+						break;
+						case 3:
+						return 2;
+						break;
+						case 4:
+						return 3;
+						break;
+					}
+				}else{
+					return D;
+				}
+			}
 		if((mouse_x >= cg + proc * grid_size && mouse_x <= cg + proc * grid_size + grid_size)){
 			var mx = cg + proc*grid_size + grid_size/2
 				if(mouse_check_button_pressed(mb_left)){
 					var POS = getStrumTime(dummymouse_y + (grid_p1_height * c_section))//-(grid_y - dummymouse_y) + grid_size
-					charter_add_note(mx,POS,proc,note_length,arrow_type)
+					charter_add_note(mx,POS,PRIORITYLIST(proc),note_length,arrow_type)
 				}
 			}
 		
 		proc += 1
-		if(proc >= 4){
+		if(proc >= ui_arrow_count){
 			proc = 0
+			ismid = 0
 			grid = 1
 		}
 	}
@@ -121,7 +148,31 @@ if(!instance_exists(b_charter_menu) || b_charter_menu._menu_is_extended = false 
 		var NC = variable_instance_get(self,"section_notes" + string(c_section))
 		var proc = 0
 		repeat(array_length(NC)){
-			var X = array_get(array_get(NC,proc),0)
+			var PRIORITYLIST = function(){
+				var D = argument[0];
+				if(ui_arrow_count % 2 = 1 && ui_arrow_count > 4){
+					switch(D){
+						case 0:
+						return 0;
+						break;
+						case 1:
+						return 1;
+						break;
+						case 2:
+						return 4;
+						break;
+						case 3:
+						return 2;
+						break;
+						case 4:
+						return 3;
+						break;
+					}
+				}else{
+					return D;
+				}
+			}
+			var X = (array_get(array_get(NC,proc),0) < 640 ? grid_p2_x : grid_p1_x) + PRIORITYLIST(array_get(array_get(NC,proc),2)) * grid_size
 			var POS = getYfromStrum(array_get(array_get(NC,proc),1)) - (grid_p1_height * c_section)
 			if((mouse_y >= POS - grid_size/2 && mouse_y <= POS + grid_size/2) && (mouse_x >= X - grid_size/2 && mouse_x <= X + grid_size/2)){
 				if(mouse_check_button_pressed(mb_right)){

@@ -93,6 +93,7 @@ var STAN = (array_length(chart)-1 >= array_length(event) ? (array_length(chart)-
 	}
 	c_section = 0
 	cs = 0
+	grid_p2_x -= (ui_arrow_count - 4) * grid_size
 	chart_is_loaded = true
 }
 

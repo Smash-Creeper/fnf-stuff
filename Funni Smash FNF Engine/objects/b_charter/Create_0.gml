@@ -77,6 +77,8 @@ BG = ""
 
 modchart = noone
 
+grid_p2_x -= (ui_arrow_count - 4) * grid_size
+
 //save_path = global.chart_save_path
 //file = song_title//save_path + song_title + ".chart"
 //event_file = song_title//save_path + song_title + ".chart"

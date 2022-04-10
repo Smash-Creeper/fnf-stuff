@@ -15,7 +15,7 @@ repeat(array_length(THE_CHART)-1){
 //		if(loaded_note[cs][nproc] = false && variable_instance_exists(NC,"notepos") && NC.notepos <= song_pos + 5 && NC.notepos  >= song_pos){
 			var tt = (variable_instance_exists(NC,"notetype") ? NC.notetype : 0)
 			Note[cs][nproc] = instance_create_depth(NC.notex,getYfromStrum(NC.notepos),BATTLE_DEPTH.B_ARROW_P1,arrowToObj(tt))
-			Note[cs][nproc].arrow_type = 12 + NC.notedir
+			Note[cs][nproc].arrow_type = 15 + NC.notedir
 			Note[cs][nproc].pos = NC.notepos
 			Note[cs][nproc].length = NC.notelength
 			if(global.onechartmode = false){

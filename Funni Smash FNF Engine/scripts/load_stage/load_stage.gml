@@ -130,6 +130,27 @@ function load_stage(){
 			//	event_perform(ev_room_start,0)
 			}
 			break;
+			case 3:
+			selfscroll_factor = 0
+			stage_asset[0] = instance_create_depth(0,0,BATTLE_DEPTH.STAGE_LOW ,asset_loader)
+			stage_asset[0].tdepth = BATTLE_DEPTH.STAGE_LOW
+			stage_asset[0].sprite_index = global.stage_sprite[STAGE.DEATH][0]
+			stage_asset[0].scroll_factor = 0
+			player_cords[0] = [3171-sprite_get_width(global.stage_sprite[STAGE.DEATH][0])/2,1931-sprite_get_height(global.stage_sprite[STAGE.DEATH][0])/2]
+			player_cords[1] = [1123-sprite_get_width(global.stage_sprite[STAGE.DEATH][0])/2,2062-sprite_get_height(global.stage_sprite[STAGE.DEATH][0])/2]
+			gf_cords = [2465,229]
+			relative_layer = 0
+			with(camera){
+				zoom = 2
+				if(instance_exists(b_chart_loader)){
+				battle_cam = true
+				}
+				battle_cam_target_player = 0
+			//	event_perform(ev_room_start,0)
+			}
+			camclampx = [0,0]
+			camclampy = [0,0]
+			break;
 			
 			default:
 			selfscroll_factor = 0.9

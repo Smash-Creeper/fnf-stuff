@@ -35,6 +35,9 @@ function charter_add_event(){
 	case EVENT.CUSTOM:
 	var COL = c_navy
 	break;
+	default:
+	var COL = c_white
+	break;
 	}
 	if(variable_instance_exists(self,"section_events" + string(c_section)) = false){
 		variable_instance_set(self,"section_events" + string(c_section), array_create(0))

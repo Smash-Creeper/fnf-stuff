@@ -11,7 +11,7 @@ if(length > 0){
 if(!was_locked){
 	draw_flash_sprite_ext(global.arrow_sprites[1],arrow_type,0,x,y,scalex,scaley,image_angle,image_blend,image_alpha)
 }
-draw_set_color(c_black)
+/*draw_set_color(c_black)
 if(debug_mode){
 	draw_text(x,y-80,string(getYfromStrum(length)))
 	draw_text(x,y-80+20,string(length))

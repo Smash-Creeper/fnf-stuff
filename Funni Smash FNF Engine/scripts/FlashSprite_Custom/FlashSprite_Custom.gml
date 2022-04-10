@@ -15,31 +15,37 @@ function FlashSprite_Custom(){
 	FlashImg_Define(FP,ARROW_STATE.DOWN,"arrowDOWN")
 	FlashImg_Define(FP,ARROW_STATE.UP,"arrowUP")
 	FlashImg_Define(FP,ARROW_STATE.RIGHT,"arrowRIGHT")
+	FlashImg_Define(FP,ARROW_STATE.MIDDLE,"arrowSPACE")
 	
 	FlashImg_Define(FP,ARROW_STATE.LEFT_PRESS,"left press")
 	FlashImg_Define(FP,ARROW_STATE.DOWN_PRESS,"down press")
 	FlashImg_Define(FP,ARROW_STATE.UP_PRESS,"up press")
 	FlashImg_Define(FP,ARROW_STATE.RIGHT_PRESS,"right press")
+	FlashImg_Define(FP,ARROW_STATE.MIDDLE_PRESS,"white press")
 	
 	FlashImg_Define(FP,ARROW_STATE.LEFT_CONFIRM,"left confirm")
 	FlashImg_Define(FP,ARROW_STATE.DOWN_CONFIRM,"down confirm")
 	FlashImg_Define(FP,ARROW_STATE.UP_CONFIRM,"up confirm")
 	FlashImg_Define(FP,ARROW_STATE.RIGHT_CONFIRM,"right confirm")
+	FlashImg_Define(FP,ARROW_STATE.MIDDLE_CONFIRM,"white confirm")
 	
 	///Must Hit Arrows
 	FlashImg_Define(FP,ARROW_MUSTHIT.LEFT,"purple")
 	FlashImg_Define(FP,ARROW_MUSTHIT.DOWN,"blue")
 	FlashImg_Define(FP,ARROW_MUSTHIT.UP,"green")
 	FlashImg_Define(FP,ARROW_MUSTHIT.RIGHT,"red")
+	FlashImg_Define(FP,ARROW_MUSTHIT.MIDDLE,"white")
 	///Must Hold Arrows
 	FlashImg_Define(FP,ARROW_MUSTHOLD.LEFT,"purple hold piece")
 	FlashImg_Define(FP,ARROW_MUSTHOLD.DOWN,"blue hold piece")
 	FlashImg_Define(FP,ARROW_MUSTHOLD.UP,"green hold piece")
 	FlashImg_Define(FP,ARROW_MUSTHOLD.RIGHT,"red hold piece")
+	FlashImg_Define(FP,ARROW_MUSTHOLD.MIDDLE,"white hold piece")
 	FlashImg_Define(FP,ARROW_MUSTHOLD.LEFT_END,"pruple end hold")
 	FlashImg_Define(FP,ARROW_MUSTHOLD.DOWN_END,"blue hold end")
 	FlashImg_Define(FP,ARROW_MUSTHOLD.UP_END,"green hold end")
 	FlashImg_Define(FP,ARROW_MUSTHOLD.RIGHT_END,"red hold end")
+	FlashImg_Define(FP,ARROW_MUSTHOLD.MIDDLE_END,"white hold end")
 	
 //	var FP = "./assets/shared/pain_NOTE_assets"
 					   
@@ -132,6 +138,8 @@ function FlashSprite_Custom(){
 	global.stage_sprite[STAGE.PHILLY][1] = sprite_add(FP + "city.png",0,false,false,0,0)
 	global.stage_sprite[STAGE.PHILLY][2] = sprite_add(FP + "behindTrain.png",0,false,false,0,0)
 	global.stage_sprite[STAGE.PHILLY][3] = sprite_add(FP + "street.png",0,false,false,0,0)
+	var FP = "./assets/stages/death/"
+	global.stage_sprite[STAGE.DEATH][0] = sprite_add(FP + "death.png",0,false,false,0,0)
 	
 	///Other Sprites
 	global.spr_event_note = sprite_add("./assets/shared/spr_event_placeholder.png",0,false,false,20,20)

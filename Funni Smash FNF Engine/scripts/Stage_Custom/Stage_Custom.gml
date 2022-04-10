@@ -5,5 +5,6 @@ function Stage_Custom(){
 		STAGE,
 		PHILLY,
 		LIMO,
+		DEATH,
 	}
 }

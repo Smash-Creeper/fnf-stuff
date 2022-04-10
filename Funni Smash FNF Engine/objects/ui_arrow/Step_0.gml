@@ -75,13 +75,13 @@ if(!instance_exists(pause_menu)){
 	}
 	if(cpu = false){
 	if(InputGet(input) == INPUT_STATE.PRESSED){
-			if(arrow_state != 8){
-				arrow_state = 4
+			if(arrow_state != 10){
+				arrow_state = 5
 			}
 			_safe_frames = global.safe_frames
 	}else if(InputGet(input) == INPUT_STATE.HELD){
-		if(arrow_state != 8){
-				arrow_state = 4
+		if(arrow_state != 10){
+				arrow_state = 5
 		}
 		if(detect_arrow_hold){
 			_safe_frames = global.safe_frames
@@ -108,8 +108,8 @@ if(!instance_exists(pause_menu)){
 	if(cpu = true){	
 		var A = UIArrow_HitNote();
 		if(instance_exists(A) &&  point_distance(x, y, A.x, A.y) <= getYfromStrum(global.mercy_length * (2))){
-			if(arrow_state != 8){
-					arrow_state = 8
+			if(arrow_state != 10){
+					arrow_state = 10
 			}
 		}else{
 			arrow_state = 0

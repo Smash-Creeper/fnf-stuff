@@ -17,6 +17,9 @@ function arrowtochar(){
 		case ARROW_STATE.UP:
 		case ARROW_STATE.UP_PRESS:
 		case ARROW_STATE.UP_CONFIRM:
+		case ARROW_STATE.MIDDLE:
+		case ARROW_STATE.MIDDLE_PRESS:
+		case ARROW_STATE.MIDDLE_CONFIRM:
 		C = PLAYER_STATE.UP
 		break;
 		case ARROW_STATE.RIGHT:
@@ -31,6 +34,7 @@ function arrowtochar(){
 		C = PLAYER_STATE.DOWN_MISSED
 		break;
 		case ARROW_MUSTHIT.UP:
+		case ARROW_MUSTHIT.MIDDLE:
 		C = PLAYER_STATE.UP_MISSED
 		break;
 		case ARROW_MUSTHIT.RIGHT:

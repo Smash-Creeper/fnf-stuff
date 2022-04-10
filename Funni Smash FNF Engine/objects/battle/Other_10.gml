@@ -30,6 +30,9 @@ gf.ogx = array_get(stage.gf_cords,0)
 gf.ogy = array_get(stage.gf_cords,1)
 gf.scroll_factor = stage.selfscroll_factor
 
+load_uiarrows(global.ui_arrows)
+
+/*
 arrow[0,0] = instance_create_depth(50+56+640,103,BATTLE_DEPTH.UI_ARROW_P1,ui_arrow)
 arrow[0,0].input = global.input_left
 arrow[0,0].arrow_state = ARROW_STATE.LEFT
@@ -76,4 +79,4 @@ arrow[3,1] = instance_create_depth(385+56,103 + cot,BATTLE_DEPTH.UI_ARROW_P2,ui_
 arrow[3,1].input = global.input_right
 arrow[3,1].arrow_state = ARROW_STATE.RIGHT
 arrow[3,1].arrow_state_default = ARROW_STATE.RIGHT
-arrow[3,1].linked_player = battle.player[1]
+arrow[3,1].linked_player = battle.player[1]*/

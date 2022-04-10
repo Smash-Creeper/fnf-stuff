@@ -12,10 +12,10 @@ repeat(array_length(THE_CHART)-1){
 		var NC = array_get(_data,nproc)
 		
 	//	show_debug_message(string(NC))
-		if(loaded_note[cs][nproc] = false && variable_instance_exists(NC,"notepos") && NC.notepos <= song_pos + 5 && NC.notepos  >= song_pos){
+		if(loaded_note[cs][nproc] = false && variable_instance_exists(NC,"notepos") && getYfromStrum(NC.notepos-song_pos) * global.arrow_speed <= window_get_height()/* && NC.notepos <= song_pos + 5*/ && NC.notepos  >= song_pos){
 			var tt = (variable_instance_exists(NC,"notetype") ? NC.notetype : 0)
 			var N = instance_create_depth(NC.notex,getYfromStrum(NC.notepos),BATTLE_DEPTH.B_ARROW_P1,arrowToObj(tt))
-			N.arrow_type = 12 + NC.notedir
+			N.arrow_type = 15 + NC.notedir
 			N.pos = NC.notepos
 			N.length = NC.notelength
 			if(global.onechartmode = false){
@@ -47,7 +47,7 @@ repeat(array_length(THE_EVENT_CHART)){
 	var nproc = 0
 	repeat(array_length(_data)){
 		var NC = array_get(_data,nproc)
-		if(loaded_event[cs][nproc] = false && variable_instance_exists(NC,"eventtype") && NC.eventpos <= song_pos + 5){
+		if(loaded_event[cs][nproc] = false && variable_instance_exists(NC,"eventtype") && getYfromStrum(NC.eventpos-song_pos) < window_get_height()){
 		var vv = (variable_instance_exists(NC,"eventval") ? NC.eventval : 0)
 		var N = instance_create_depth(0,getYfromStrum(NC.eventpos),BATTLE_DEPTH.B_ARROW_P1,b_event)
 		N._event_type = NC.eventtype

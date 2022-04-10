@@ -13,9 +13,9 @@ draw_flash_sprite_ext(global.arrow_sprites[arrow_skin],ADIR,ic,x,y,scalex,scaley
 
 var xo = x+lengthdir_x(flash_sprite_get_width(ADIR,ic)*scalex,image_angle+135)
 var yo = y+lengthdir_y(flash_sprite_get_height(ADIR,ic)*scaley,image_angle+135)
-draw_sprite_ext(spr_pixel,0,x-3,y-3,6,6,0,c_red,1)
+//draw_sprite_ext(spr_pixel,0,x-3,y-3,6,6,0,c_red,1)
 draw_set_color(c_white)
-
+/*
 if(debug_mode){
 	draw_text(x,y,string(_safe_frames))
 	draw_text(x,y+20,string(detect_arrow))

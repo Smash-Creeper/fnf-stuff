@@ -21,24 +21,52 @@ if(chart_is_loaded = true){
 		var NC = variable_instance_get(self,"section_notes" + string(c_section))
 		var proc = 0
 		repeat(array_length(NC)){
+			var ismid = 0
 			var X = array_get(array_get(NC,proc),0)
 			var POS = getYfromStrum(array_get(array_get(NC,proc),1))
 			var DIR = array_get(array_get(NC,proc),2)
 			var LENGTH = array_get(array_get(NC,proc),3)
 			var TYPE = array_get(array_get(NC,proc),4)
-			var sx = 1/global.img_width[12 + DIR][0] * grid_size
-			var sy = 1/global.img_height[12 + DIR][0] * grid_size
-			var slx = 1/global.img_width[16 + DIR][0] * (grid_size/2)
-			var sly = 1/global.img_height[16 + DIR][0] * LENGTH
-			var shh = real(global.img_height[16 + DIR][0])
-			var shw = real(global.img_width[16 + DIR][0])
-			var X = (X > 640 ? (grid_p1_x + DIR*grid_size + grid_size/2) : (grid_p2_x + DIR*grid_size + grid_size/2))
+			var PRIORITYLIST = function(){
+				var D = argument[0];
+				if(ui_arrow_count % 2 = 1 && ui_arrow_count > 4){
+					switch(D){
+						case 0:
+						return 0;
+						break;
+						case 1:
+						return 1;
+						break;
+						case 2:
+						return 3;
+						break;
+						case 3:
+						return 4;
+						break;
+						case 4:
+						return 2;
+						break;
+					}
+				}else{
+					return D;
+				}
+			}
+			var AE = 15 + DIR//PRIORITYLIST(DIR)
+			var AHE = 20 + DIR// PRIORITYLIST(DIR)
+			var sx = 1/global.img_width[AE][0] * grid_size
+			var sy = 1/global.img_height[AE][0] * grid_size
+			var slx = 1/global.img_width[AHE][0] * (grid_size/2)
+			var sly = 1/global.img_height[AHE][0] * LENGTH
+			var shh = real(global.img_height[AHE][0])
+			var shw = real(global.img_width[AHE][0])
+			var X = (X > 640 ? (grid_p1_x + PRIORITYLIST(DIR)*grid_size + grid_size/2) : (grid_p2_x + PRIORITYLIST(DIR)*grid_size + grid_size/2))
 			draw_text(0,20,string(X))
 			draw_text(0,40,string(POS))
 			draw_text(0,60,string(DIR))
+			
 			var ALP = ((POS > getYfromStrum(song_pos)) ? 1 : 0.5)
-			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR,0,X,POS - (grid_p1_height * c_section),sx,sy,image_angle,c_white,ALP)
-			draw_flash_sprite_ext(global.arrow_sprites[TYPE],12+DIR+4,0,X,POS - (grid_p1_height * c_section),(1/shw) * 10,(1/shh) * getYfromStrum(LENGTH),image_angle,image_blend,ALP,SPRITE_ORIGIN.TOP_MIDDLE)
+			draw_flash_sprite_ext(global.arrow_sprites[TYPE],AE,0,X,POS - (grid_p1_height * c_section),sx,sy,image_angle,c_white,ALP)
+			draw_flash_sprite_ext(global.arrow_sprites[TYPE],AHE,0,X,POS - (grid_p1_height * c_section),(1/shw) * 10,(1/shh) * getYfromStrum(LENGTH),image_angle,image_blend,ALP,SPRITE_ORIGIN.TOP_MIDDLE)
 			draw_text_color(X,POS - (grid_p1_height * c_section),array_get(array_get(NC,proc),1),c_white,c_white,c_white,c_white,1)
 			proc += 1
 		}
@@ -90,18 +118,27 @@ if(chart_is_loaded = true){
 	var proc = 0
 	var tproc = 0
 	var grid = 2
+	var ismid = 0
+	var AE = 15 + proc - ismid
 	repeat(ui_arrow_count*2){
 		var cg = variable_instance_get(self,"grid_p" + string(grid) + "_x")
+		if(floor(ui_arrow_count/2) = proc && ui_arrow_count % 2 == 1){
+			ismid = 1
+			AE = 19//15 + proc
+		}else{
+			AE = 15 + proc - ismid
+		}
 		if((mouse_x >= cg + proc * grid_size && mouse_x <= cg + proc * grid_size + grid_size)){
-			var sx = 1/global.img_width[12 + proc][0] * grid_size
-			var sy = 1/global.img_height[12 + proc][0] * grid_size
+			var sx = 1/global.img_width[AE][0] * grid_size
+			var sy = 1/global.img_height[AE][0] * grid_size
 			var mx = cg + proc*grid_size + grid_size/2
-			draw_flash_sprite_ext(global.arrow_sprites[arrow_type],12 + proc,0,mx,dummymouse_y,sx,sy,image_angle,c_white,1)
+			draw_flash_sprite_ext(global.arrow_sprites[arrow_type],AE,0,mx,dummymouse_y,sx,sy,image_angle,c_white,1)
 		}
 		proc += 1
 		tproc += 1
-		if(proc >= 4){
+		if(proc >= ui_arrow_count){
 			proc = 0
+			ismid = 0
 			grid = 1
 		}
 	}

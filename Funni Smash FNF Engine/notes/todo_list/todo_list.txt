@@ -1,9 +1,12 @@
-Notes and To-do List for tomorrow(1-18-22)
+Notes and To-do List for tomorrow(4-6-22)
+Allow for more(or less) UI Arrows to be present in a song
+RE DO THE ANIMATION SYSTEM, HAVE IT USE DS LIST SO YOU CAN CALL ANIMATIONS WITH QUOTES INSTEAD OF ENUMS GOD WHY DID I HAVE TO PROGRAM IT LIKE THAT ITS GONNA BE SUCH A PAIN IN THE ASS TO FIX AHHHHHHHHHHHHHHHH
+Consider using an external object to render arrow sprites
+Make Settings Menu,
+Create character offset system (Dev only tool),
 Make a proper Charter UI,
 Make Menu System (Story Mode, Freeplay, etc),
-Make Settings Menu,
 Create Stage Positioning System (Dev only tool),
-Create camera offset System for player characters,
 
 Extra:
 Add Hidden Chart Feature to Charter (For Songs who have more than 2 singers)

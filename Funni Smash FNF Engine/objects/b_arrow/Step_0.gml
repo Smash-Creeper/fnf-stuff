@@ -21,6 +21,6 @@ x = linked_ui_arrow.x
 if(point_distance(linked_ui_arrow.x, linked_ui_arrow.y, x, y) > getYfromStrum(global.mercy_length * (2)) && linked_ui_arrow.cpu = false && contacted = true && (pos - b_chart_loader.song_pos) <= 0){
 	event_user(1)
 }
-if(instance_exists(linked_ui_arrow._target_note) && linked_ui_arrow.arrow_state = 8 && linked_ui_arrow._target_note = id){
+if(instance_exists(linked_ui_arrow._target_note) && linked_ui_arrow.arrow_state = 10 && linked_ui_arrow._target_note = id){
 	event_user(0)
 }
