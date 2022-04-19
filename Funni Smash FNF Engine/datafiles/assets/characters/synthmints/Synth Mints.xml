@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Synth Mints.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Snowy Down0000" x="0" y="0" width="495" height="241" frameX="0" frameY="-184" frameWidth="495" frameHeight="425"/>
+	<SubTexture name="Snowy Down0001" x="495" y="0" width="471" height="302" frameX="-12" frameY="-123" frameWidth="495" frameHeight="425"/>
+	<SubTexture name="Snowy Down0002" x="966" y="0" width="448" height="364" frameX="-23" frameY="-61" frameWidth="495" frameHeight="425"/>
+	<SubTexture name="Snowy Down0003" x="1414" y="0" width="425" height="425" frameX="-35" frameY="0" frameWidth="495" frameHeight="425"/>
+	<SubTexture name="Snowy Down0004" x="1414" y="0" width="425" height="425" frameX="-35" frameY="0" frameWidth="495" frameHeight="425"/>
+	<SubTexture name="Snowy Down0005" x="1414" y="0" width="425" height="425" frameX="-35" frameY="0" frameWidth="495" frameHeight="425"/>
+	<SubTexture name="Snowy Down0006" x="1414" y="0" width="425" height="425" frameX="-35" frameY="0" frameWidth="495" frameHeight="425"/>
+	<SubTexture name="Snowy Idle0000" x="1839" y="0" width="367" height="481" frameX="-37" frameY="0" frameWidth="487" frameHeight="481"/>
+	<SubTexture name="Snowy Idle0001" x="2206" y="0" width="343" height="443" frameX="-67" frameY="-38" frameWidth="487" frameHeight="481"/>
+	<SubTexture name="Snowy Idle0002" x="2549" y="0" width="326" height="401" frameX="-89" frameY="-79" frameWidth="487" frameHeight="481"/>
+	<SubTexture name="Snowy Idle0003" x="2875" y="0" width="344" height="443" frameX="-104" frameY="-38" frameWidth="487" frameHeight="481"/>
+	<SubTexture name="Snowy Idle0004" x="3219" y="0" width="369" height="481" frameX="-118" frameY="0" frameWidth="487" frameHeight="481"/>
+	<SubTexture name="Snowy Idle0005" x="3588" y="0" width="344" height="457" frameX="-104" frameY="-24" frameWidth="487" frameHeight="481"/>
+	<SubTexture name="Snowy Idle0006" x="0" y="481" width="330" height="430" frameX="-86" frameY="-51" frameWidth="487" frameHeight="481"/>
+	<SubTexture name="Snowy Idle0007" x="330" y="481" width="417" height="453" frameX="0" frameY="-28" frameWidth="487" frameHeight="481"/>
+	<SubTexture name="Snowy Left0000" x="747" y="481" width="858" height="858" frameX="0" frameY="0" frameWidth="991" frameHeight="858"/>
+	<SubTexture name="Snowy Left0001" x="1605" y="481" width="702" height="701" frameX="-171" frameY="-64" frameWidth="991" frameHeight="858"/>
+	<SubTexture name="Snowy Left0002" x="2307" y="481" width="776" height="776" frameX="-215" frameY="-47" frameWidth="991" frameHeight="858"/>
+	<SubTexture name="Snowy Left0003" x="3083" y="481" width="703" height="704" frameX="-218" frameY="-86" frameWidth="991" frameHeight="858"/>
+	<SubTexture name="Snowy Left0004" x="0" y="1339" width="615" height="615" frameX="-226" frameY="-138" frameWidth="991" frameHeight="858"/>
+	<SubTexture name="Snowy Left0005" x="0" y="1339" width="615" height="615" frameX="-226" frameY="-138" frameWidth="991" frameHeight="858"/>
+	<SubTexture name="Snowy Left0006" x="0" y="1339" width="615" height="615" frameX="-226" frameY="-138" frameWidth="991" frameHeight="858"/>
+	<SubTexture name="Snowy Left0007" x="0" y="1339" width="615" height="615" frameX="-226" frameY="-138" frameWidth="991" frameHeight="858"/>
+	<SubTexture name="Snowy Right0000" x="615" y="1339" width="631" height="638" frameX="-114" frameY="-32" frameWidth="763" frameHeight="735"/>
+	<SubTexture name="Snowy Right0001" x="1246" y="1339" width="720" height="717" frameX="-43" frameY="0" frameWidth="763" frameHeight="735"/>
+	<SubTexture name="Snowy Right0002" x="1966" y="1339" width="586" height="576" frameX="-89" frameY="-78" frameWidth="763" frameHeight="735"/>
+	<SubTexture name="Snowy Right0003" x="2552" y="1339" width="730" height="731" frameX="0" frameY="-4" frameWidth="763" frameHeight="735"/>
+	<SubTexture name="Snowy Right0004" x="3282" y="1339" width="512" height="523" frameX="-93" frameY="-106" frameWidth="763" frameHeight="735"/>
+	<SubTexture name="Snowy Right0005" x="3282" y="1339" width="512" height="523" frameX="-93" frameY="-106" frameWidth="763" frameHeight="735"/>
+	<SubTexture name="Snowy Right0006" x="3282" y="1339" width="512" height="523" frameX="-93" frameY="-106" frameWidth="763" frameHeight="735"/>
+	<SubTexture name="Snowy Right0007" x="3282" y="1339" width="512" height="523" frameX="-93" frameY="-106" frameWidth="763" frameHeight="735"/>
+	<SubTexture name="Snowy Up0000" x="0" y="2070" width="389" height="815" frameX="-75" frameY="0" frameWidth="597" frameHeight="815"/>
+	<SubTexture name="Snowy Up0001" x="389" y="2070" width="441" height="778" frameX="-56" frameY="-28" frameWidth="597" frameHeight="815"/>
+	<SubTexture name="Snowy Up0002" x="830" y="2070" width="493" height="741" frameX="-37" frameY="-56" frameWidth="597" frameHeight="815"/>
+	<SubTexture name="Snowy Up0003" x="1323" y="2070" width="545" height="705" frameX="-19" frameY="-84" frameWidth="597" frameHeight="815"/>
+	<SubTexture name="Snowy Up0004" x="1868" y="2070" width="597" height="668" frameX="0" frameY="-112" frameWidth="597" frameHeight="815"/>
+	<SubTexture name="Snowy Up0005" x="1868" y="2070" width="597" height="668" frameX="0" frameY="-112" frameWidth="597" frameHeight="815"/>
+	<SubTexture name="Snowy Up0006" x="1868" y="2070" width="597" height="668" frameX="0" frameY="-112" frameWidth="597" frameHeight="815"/>
+	<SubTexture name="Snowy Up0007" x="1868" y="2070" width="597" height="668" frameX="0" frameY="-112" frameWidth="597" frameHeight="815"/>
+	<SubTexture name="Snowy Up Alt0000" x="2465" y="2070" width="267" height="570" frameX="-56" frameY="0" frameWidth="379" frameHeight="570"/>
+	<SubTexture name="Snowy Up Alt0001" x="2732" y="2070" width="295" height="548" frameX="-42" frameY="-22" frameWidth="379" frameHeight="570"/>
+	<SubTexture name="Snowy Up Alt0002" x="3027" y="2070" width="323" height="525" frameX="-28" frameY="-45" frameWidth="379" frameHeight="570"/>
+	<SubTexture name="Snowy Up Alt0003" x="3350" y="2070" width="351" height="503" frameX="-14" frameY="-67" frameWidth="379" frameHeight="570"/>
+	<SubTexture name="Snowy Up Alt0004" x="3701" y="2070" width="379" height="481" frameX="0" frameY="-89" frameWidth="379" frameHeight="570"/>
+	<SubTexture name="Snowy Up Alt0005" x="3701" y="2070" width="379" height="481" frameX="0" frameY="-89" frameWidth="379" frameHeight="570"/>
+	<SubTexture name="Snowy Up Alt0006" x="3701" y="2070" width="379" height="481" frameX="0" frameY="-89" frameWidth="379" frameHeight="570"/>
+	<SubTexture name="Snowy Up Alt0007" x="3701" y="2070" width="379" height="481" frameX="0" frameY="-89" frameWidth="379" frameHeight="570"/>
+</TextureAtlas>

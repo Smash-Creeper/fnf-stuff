@@ -13,6 +13,7 @@ function Important_Variables(){
 	global.mercy_length = 0.15
 	global.botplay = true
 	global.onechartmode = false
+	global.optimizedmode = false
 	global.hp = 50
 	global.hpmax = 100
 	
@@ -116,7 +117,8 @@ function Important_Variables(){
 	
 	enum MENU_STATE{
 		STORY_MODE,
-		FREEPLAY
+		FREEPLAY,
+		OPTIONS
 	}
 	
 	global.player_arrowpos = [[106+640,103],[217+640,103],[329+640,103],[441+640,103]]

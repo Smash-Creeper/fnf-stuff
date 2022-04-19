@@ -1,3 +1,8 @@
+if(!surface_exists(ui_surface)){
+	ui_surface = surface_create(window_get_width(),window_get_height());
+}else{
+surface_set_target(ui_surface);
+//draw_clear_alpha(c_white,1);
 var EQ = lerp(0,592,(global.hp/global.hpmax))//funni_scaler(global.hp,2,592)
 //EQ = EQ
 draw_sprite_ext(spr_pixel,0,window_get_width()/2 - 300,650,601,18,0,c_black,1 )
@@ -29,4 +34,7 @@ repeat(P2I){
 }
 var P2Losing = (global.hpmax - global.hp <= global.hpmax/10 ? 1 : 0)
 draw_sprite_general(global.spr_icons,0,150 * (P2IXProc + P2Losing),150 * P2IYProc,150,150,window_get_width()/2 + 296 -EQ - 150,653-75,1,1,0,c_white,c_white,c_white,c_white,1)
+surface_reset_target();
+}
+draw_surface(ui_surface,0,0)
 ///Make HP become real

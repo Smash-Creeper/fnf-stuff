@@ -24,6 +24,10 @@ if(active){
 			m_bg.flash = true
 			alarm[0] = 40
 			break;
+			case 2:
+			m_bg.flash = true
+			alarm[0] = 40
+			break;
 		}
 		audio_play_sound(sfx_confirmMenu,0,false)
 	}

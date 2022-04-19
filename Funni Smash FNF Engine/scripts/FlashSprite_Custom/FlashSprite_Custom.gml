@@ -101,6 +101,13 @@ function FlashSprite_Custom(){
 	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.DOWN,"Sensai Down")
 	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.UP,"Sensai Up")
 	CharAnim_Define(FP,CHARACTER.SENSAI,PLAYER_STATE.RIGHT,"Sensai Right")
+	var FP = "./assets/characters/synthmints/Synth Mints"
+	global.spr_snowy = sprite_add(FP + ".png",0,false,false,0,0)
+	CharAnim_Define(FP,CHARACTER.SNOWY,PLAYER_STATE.IDLE,"Snowy Idle")
+	CharAnim_Define(FP,CHARACTER.SNOWY,PLAYER_STATE.LEFT,"Snowy Left")
+	CharAnim_Define(FP,CHARACTER.SNOWY,PLAYER_STATE.DOWN,"Snowy Down")
+	CharAnim_Define(FP,CHARACTER.SNOWY,PLAYER_STATE.UP,"Snowy Up")
+	CharAnim_Define(FP,CHARACTER.SNOWY,PLAYER_STATE.RIGHT,"Snowy Right")
 	var FP = "./assets/characters/lemon/Lemon Sans"
 	global.spr_lemon = sprite_add(FP + ".png",0,false,false,0,0)
 	CharAnim_Define(FP,CHARACTER.LEMON,PLAYER_STATE.IDLE,"Lemon Sans Idle")

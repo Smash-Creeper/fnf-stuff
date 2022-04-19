@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "voc_pibblammed.ogg",
-  "duration": 106.473755,
+  "duration": 110.405,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

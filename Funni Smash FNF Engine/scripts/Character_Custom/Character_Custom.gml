@@ -6,6 +6,7 @@ function Character_Custom(){
 		DAD,
 		GF,
 		SENSAI,
+		SNOWY,
 		LEMON,
 		FA_BF,
 		ROBO_BF,

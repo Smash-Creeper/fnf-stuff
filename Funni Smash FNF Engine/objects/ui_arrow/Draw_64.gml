@@ -1,3 +1,10 @@
+if(!surface_exists(battle.ui_surface)){
+	battle.ui_surface = surface_create(window_get_width(),window_get_height());
+}else{
+surface_set_target(battle.ui_surface)
+//draw_clear_alpha(c_white,0);
+show_debug_message("B")
+
 var ADIR = arrow_state_default + arrow_state
 
 var IF = array_length(global.img_line[arrow_state_default + arrow_state]) - 1
@@ -15,6 +22,8 @@ var xo = x+lengthdir_x(flash_sprite_get_width(ADIR,ic)*scalex,image_angle+135)
 var yo = y+lengthdir_y(flash_sprite_get_height(ADIR,ic)*scaley,image_angle+135)
 //draw_sprite_ext(spr_pixel,0,x-3,y-3,6,6,0,c_red,1)
 draw_set_color(c_white)
+surface_reset_target();
+}
 /*
 if(debug_mode){
 	draw_text(x,y,string(_safe_frames))

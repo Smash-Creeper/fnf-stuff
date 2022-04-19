@@ -1,0 +1,1 @@
+glitch = instance_create_depth(0,0,BATTLE_DEPTH.B_ARROW_P2-100,glitch_test)

@@ -1,4 +1,4 @@
-if(debug_mode){
+/*if(debug_mode){
 	draw_set_color(c_white)
 	draw_text(0,160,string(x))
 	draw_text(0,180,string(y))

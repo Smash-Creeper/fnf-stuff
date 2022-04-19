@@ -32,6 +32,8 @@ gf.scroll_factor = stage.selfscroll_factor
 
 load_uiarrows(global.ui_arrows)
 
+ui_surface = surface_create(window_get_width(),window_get_height());
+
 /*
 arrow[0,0] = instance_create_depth(50+56+640,103,BATTLE_DEPTH.UI_ARROW_P1,ui_arrow)
 arrow[0,0].input = global.input_left

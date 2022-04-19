@@ -7,4 +7,8 @@ switch(selected){
 	global.menustate = MENU_STATE.FREEPLAY
 	room_goto(room_freeplay_menu)
 	break;
+	case 2:
+	global.menustate = MENU_STATE.OPTIONS
+	room_goto(room_options_menu)
+	break;
 }
